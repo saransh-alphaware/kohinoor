@@ -1,0 +1,791 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1376px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+}
+
+.contact-item {
+  padding: 10px;
+}
+
+.contact-item > span {
+  color: rgba(51, 51, 51, 0.7);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+header > hr {
+  height: 1px;
+  background-color: rgba(51, 51, 51, 0.1);
+  border: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  margin: auto 40px;
+  color: #333333;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.nav-menu li a:hover {
+  color: #4762ff;
+}
+
+.contact-us-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #4762ff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.hero-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  margin-bottom: 30px;
+}
+
+.contact-us-button-hero {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+.contact-us-button-hero {
+  background: #007bff;
+  color: white;
+}
+
+.contact-us-button-hero:hover {
+  background: #0056b3;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 50%;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+/* About Us Section */
+.about-us {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.about-us p {
+  display: flex;
+  flex-direction: column;
+  font-size: 18spx;
+  margin-bottom: 30px;
+}
+
+/* Products Section */
+.products-section {
+  width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+}
+
+.products-section h2 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/* Product Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 10px;
+}
+
+.product {
+  text-align: center;
+}
+
+/* Fix: Wrap Image Inside a Fixed-Height Div */
+.product-image {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product img:hover {
+  transform: scale(1.05);
+}
+
+/* Product Names */
+.product p {
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Download Button */
+.download {
+  background: #007bff;
+  color: white;
+}
+
+.download:hover {
+  background: #0056b3;
+}
+
+/* See All Products Button */
+.see-all {
+  background: #28a745;
+  color: white;
+}
+
+.see-all:hover {
+  background: #1e7e34;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.why-choose-us > h2 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Benefits Grid */
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Individual Benefit Item */
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d0d0d0;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-item img {
+  width: 60px;
+  height: auto;
+}
+
+.benefit-item hr {
+  height: 4px;
+  background-color: #0056b3;
+  border: none;
+  width: 40%;
+}
+
+.benefit-item h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.benefit-item span {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Get in Touch Section */
+.get-in-touch {
+  display: flex;
+  width: fit-content;
+  padding: 10px 20px;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d0d0d0;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.get-in-touch:hover {
+  background-color: #f0f0f0;
+}
+
+.get-in-touch > h2 {
+  font-size: 1.2rem;
+}
+
+.get-in-touch img {
+  width: 25px;
+  height: auto;
+}
+
+/* More Product Details */
+.more-product-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f4f6fa;
+  height: 270px; /* Increased height */
+  overflow: hidden;
+}
+
+/* Text Section (60% of box) */
+.card-text {
+  width: 60%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.card-text h2 {
+  line-height: 2rem;
+  font-size: 1.5rem; /* Increased size */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-text p {
+  font-size: 1rem; /* Slightly larger text */
+  color: rgba(51, 51, 51, 0.8);
+}
+
+/* Image Section (40% of box) */
+.card-image {
+  width: 40%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.card-image img {
+  max-width: 200px; /* Increased size */
+  mix-blend-mode: multiply;
+}
+
+/* About Us */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+/* Left Text Section (60%) */
+.about-text {
+  width: 60%;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Right Image Section (40%) */
+.about-image {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Contact Section */
+.contact {
+  max-width: 650px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Title */
+.contact h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.input-group textarea {
+  resize: none;
+}
+
+/* Submit Button */
+.submit {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #0056b3;
+}
+
+/* Physical Contact Section */
+.physical-contact {
+  display: flex;
+  height: 550px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: auto;
+  background: #f4f4f4;
+  gap: 20px;
+}
+
+/* Left Section - Contact Info */
+.physical-contact-info {
+  padding-left: 30px;
+  width: 50%;
+}
+
+.physical-contact-info h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.physical-contact-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Right Section - Google Maps */
+.contact-map {
+  width: 50%;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 550px;
+}
+
+/* Footer Section */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #ffcc00;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  max-width: 300px;
+}
+
+.footer-contact-info {
+  margin-top: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffcc00;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 14px;
+  opacity: 0.8;
+  text-align: center;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Small screens: 1 column */
+@media (max-width: 600px) {
+  .benefits {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .why-choose-us > h2 {
+    font-size: 2rem;
+  }
+
+  .benefit-item {
+    padding: 15px;
+  }
+
+  .benefit-item h2 {
+    font-size: 1.1rem;
+  }
+
+  .benefit-item span {
+    font-size: 0.95rem;
+  }
+
+  .contact {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-info {
+    display: none;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .contact-us-button {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-image {
+    max-width: 100%;
+  }
+
+  .contact-us-button-hero {
+    display: inline-block;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .more-product-details {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-image img {
+    max-width: 150px;
+    margin-top: 10px;
+    mix-blend-mode: multiply;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .about-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  .physical-contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .physical-contact-info,
+  .contact-map {
+    width: 100%;
+  }
+
+  .contact-map iframe {
+    height: 250px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* Medium screens: 2 columns */
+@media (max-width: 992px) {
+  .benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
