@@ -53,7 +53,7 @@
         </nav>
       </header>
 
-      <section class="hero">
+      <section id="home" class="hero">
         <div class="hero-content">
           <h1>Affordable Curtain Service</h1>
           <p class="hero-description">
@@ -62,10 +62,11 @@
           </p>
           <button class="contact-us-button-hero">Know More</button>
         </div>
+        <div class="hero-image"></div>
         <img
           src="./icons/vehicle.png"
           alt="kohinoor brand"
-          class="hero-image"
+          class="hero-image-mobile"
         />
       </section>
 
@@ -83,7 +84,7 @@
         </p>
       </section>
 
-      <section class="products-section">
+      <section id="products" class="products-section">
         <h2>Products</h2>
         <div class="products-grid">
           <div class="product">
@@ -135,7 +136,7 @@
             <p>Product 1</p>
           </div>
         </div>
-        <div class="buttons">
+        <div id="catalog" class="buttons">
           <button class="download">Download Catalog</button>
           <button class="see-all">See All Products</button>
         </div>
@@ -282,7 +283,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section id="about-us" class="about">
         <div class="about-text">
           <h2>About Us</h2>
           <p>
@@ -403,6 +404,17 @@
           <p>&copy; 2025 Company Name. All Rights Reserved.</p>
         </div>
       </footer>
+
+      <a
+        href="https://wa.me/your-number"
+        class="floating-button whatsapp"
+        target="_blank"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="tel:+your-number" class="floating-button call">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+      </a>
     </div>
     <script>
       const hamburger = document.getElementById("hamburger");
