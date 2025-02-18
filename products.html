@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+      }
+      .container {
+        max-width: 1376px;
+        margin: auto;
+      }
+      .product-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 40px;
+      }
+      .product-image {
+        flex: 1;
+        min-width: 300px;
+      }
+      .product-image img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      .product-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        /* align-items: center; */
+        justify-content: center;
+      }
+      .product-parts,
+      .other-products-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+      .part,
+      .other-product {
+        border: 1px solid #ddd;
+        padding: 15px;
+        text-align: center;
+        border-radius: 8px;
+        background: #f9f9f9;
+      }
+      .part img,
+      .other-product img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      .other-products h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 768px) {
+        .product-section {
+          flex-direction: column;
+        }
+        .product-parts,
+        .other-products-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 480px) {
+        .product-parts,
+        .other-products-grid {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- First Section: Main Product Display -->
+      <section class="product-section">
+        <div class="product-image">
+          <img src="./icons/vehicle.png" alt="Product" />
+        </div>
+        <div class="product-info">
+          <h1>Product Name</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            vehicula justo non orci pretium, et accumsan libero luctus.
+          </p>
+          <p><strong>Price:</strong> $99.99</p>
+        </div>
+      </section>
+
+      <!-- Second Section: Product Parts -->
+      <section class="product-parts">
+        <div class="part">
+          <img src="./icons/vehicle.png" alt="Part 1" />
+          <p>Part 1 Description</p>
+        </div>
+        <div class="part">
+          <img src="./icons/vehicle.png" alt="Part 2" />
+          <p>Part 2 Description</p>
+        </div>
+        <div class="part">
+          <img src="./icons/vehicle.png" alt="Part 3" />
+          <p>Part 3 Description</p>
+        </div>
+        <div class="part">
+          <img src="./icons/vehicle.png" alt="Part 4" />
+          <p>Part 4 Description</p>
+        </div>
+        <div class="part">
+          <img src="./icons/vehicle.png" alt="Part 5" />
+          <p>Part 5 Description</p>
+        </div>
+        <div class="part">
+          <img src="./icons/vehicle.png" alt="Part 6" />
+          <p>Part 6 Description</p>
+        </div>
+        <div class="part">
+          <img src="./icons/vehicle.png" alt="Part 7" />
+          <p>Part 7 Description</p>
+        </div>
+        <div class="part">
+          <img src="./icons/vehicle.png" alt="Part 8" />
+          <p>Part 8 Description</p>
+        </div>
+      </section>
+
+      <!-- Third Section: Other Products -->
+      <section class="other-products">
+        <h2>Other Products</h2>
+        <div class="other-products-grid">
+          <div class="other-product">
+            <img src="./icons/vehicle.png" alt="Other Product 1" />
+            <p>Other Product 1</p>
+          </div>
+          <div class="other-product">
+            <img src="./icons/vehicle.png" alt="Other Product 2" />
+            <p>Other Product 2</p>
+          </div>
+          <div class="other-product">
+            <img src="./icons/vehicle.png" alt="Other Product 3" />
+            <p>Other Product 3</p>
+          </div>
+          <div class="other-product">
+            <img src="./icons/vehicle.png" alt="Other Product 4" />
+            <p>Other Product 4</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
