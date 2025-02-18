@@ -6,6 +6,10 @@
   font-family: "Inter", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fff;
   color: #333;
@@ -67,6 +71,7 @@ header > hr {
   color: #333333;
   font-weight: 600;
   font-size: 1rem;
+  transition: color 0.3s ease-in-out;
 }
 
 .nav-menu li a:hover {
@@ -140,8 +145,40 @@ header > hr {
 .hero-image {
   flex: 1;
   max-width: 50%;
-  height: auto;
+  height: 400px;
   mix-blend-mode: multiply;
+  background: url("../icons/vehicle.png");
+  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 1s;
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+  25% {
+    background-image: url("../icons/kohinoor-logo.png");
+  }
+  50% {
+    background-image: url("../icons/vehicle.png");
+  }
+  75% {
+    background-image: url("../icons/kohinoor-logo.png");
+  }
+  100% {
+    background-image: url("../icons/vehicle.png");
+  }
+}
+
+.hero-image-mobile {
+  display: none;
 }
 
 /* About Us Section */
@@ -633,6 +670,37 @@ button {
   text-align: center;
 }
 
+/* Floating buttons */
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.floating-button:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp {
+  right: 20px;
+  background-color: #25d366;
+}
+
+.call {
+  left: 20px;
+  background-color: #007bff;
+}
+
 /* RESPONSIVE DESIGN */
 
 /* Small screens: 1 column */
@@ -661,6 +729,12 @@ button {
   .contact {
     width: 90%;
     padding: 20px;
+  }
+
+  .floating-button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
   }
 }
 
@@ -708,8 +782,16 @@ button {
     font-size: 2.5rem;
   }
 
-  .hero-image {
+  .hero-image-mobile {
+    display: block;
+    flex: 1;
     max-width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+  }
+
+  .hero-image {
+    display: none;
   }
 
   .contact-us-button-hero {
