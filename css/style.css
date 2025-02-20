@@ -26,33 +26,22 @@ header {
   background-color: #fff;
 }
 
-.contact-info {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 10px;
-}
-
-.contact-item {
-  padding: 10px;
-}
-
-.contact-item > span {
-  color: rgba(51, 51, 51, 0.7);
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-header > hr {
-  height: 1px;
-  background-color: rgba(51, 51, 51, 0.1);
-  border: none;
-}
-
 .navbar {
+  position: fixed;
+  width: 98%; /* Adjusted for responsiveness */
+  max-width: 1376px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.9); /* Floating effect */
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 12px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
 }
 
 .logo {
@@ -107,7 +96,7 @@ header > hr {
 
 .hero-content {
   flex: 1;
-  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .hero h1 {
@@ -142,49 +131,74 @@ header > hr {
   background: #0056b3;
 }
 
-.hero-image {
+.slide > img {
+  max-width: 100%;
+}
+
+.gallery {
+  height: 600px;
+  width: 50%;
+  display: flex;
+}
+
+.gallery,
+.gallery .slide {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery-cards .panel {
+  position: relative;
   flex: 1;
-  max-width: 50%;
-  height: 400px;
-  mix-blend-mode: multiply;
-  background: url("../icons/vehicle.png");
-  background-size: cover;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: 1s;
-  animation-name: animate;
-  animation-direction: alternate-reverse;
-  animation-play-state: running;
-  animation-timing-function: ease-in-out;
-  animation-duration: 15s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
 }
 
-@keyframes animate {
-  25% {
-    background-image: url("../icons/kohinoor-logo.png");
-  }
-  50% {
-    background-image: url("../icons/vehicle.png");
-  }
-  75% {
-    background-image: url("../icons/kohinoor-logo.png");
-  }
-  100% {
-    background-image: url("../icons/vehicle.png");
-  }
+.gallery-cards .slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  transform: translateY(-50%) translateX(-50%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-out;
 }
 
-.hero-image-mobile {
-  display: none;
+.gallery-cards .images {
+  overflow-y: hidden;
+  perspective: 1000;
+}
+
+.gallery-cards .images .slide[data-order="1"] {
+  transform: translateY(-50%) translateX(-50%) translateZ(0) scale(1);
+  z-index: 1004;
+}
+
+.gallery-cards .images .slide[data-order="2"] {
+  transform: translateY(-60%) translateX(-40%) translateZ(-50px) scale(0.95);
+  z-index: 1003;
+  opacity: 0.85;
+}
+
+.gallery-cards .images .slide[data-order="3"] {
+  transform: translateY(-70%) translateX(-30%) translateZ(-100px) scale(0.9);
+  z-index: 1002;
+  opacity: 0.7;
+}
+
+.gallery-cards .images .slide[data-order="4"] {
+  transform: translateY(-80%) translateX(-20%) translateZ(-150px) scale(0.85);
+  z-index: 1001;
+  opacity: 0;
+}
+
+.gallery-cards .images .slide.leave {
+  transform: translateY(0) translateX(-50%) translateZ(0);
+  z-index: 1005;
 }
 
 /* About Us Section */
 .about-us {
   background-color: #fff;
-  padding: 40px 20px;
+  padding: 0px 20px;
   text-align: center;
 }
 
@@ -219,8 +233,8 @@ header > hr {
 /* Product Grid */
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
   padding: 10px;
 }
 
@@ -701,8 +715,6 @@ button {
   background-color: #007bff;
 }
 
-/* RESPONSIVE DESIGN */
-
 /* Small screens: 1 column */
 @media (max-width: 600px) {
   .benefits {
@@ -740,10 +752,17 @@ button {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .contact-info {
-    display: none;
+  .navbar {
+    width: 100%;
+    left: 0;
+    transform: none;
+    padding: 0px;
+    top: 0;
+    border-radius: 0;
+    background: white; /* Solid background */
+    backdrop-filter: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
-
   .nav-menu {
     display: none;
     flex-direction: column;
@@ -775,23 +794,17 @@ button {
 
   .hero-content {
     padding-right: 0;
+    padding-left: 0;
     margin-bottom: 30px;
+  }
+
+  .gallery {
+    height: 300px;
+    width: 100%;
   }
 
   .hero h1 {
     font-size: 2.5rem;
-  }
-
-  .hero-image-mobile {
-    display: block;
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-    mix-blend-mode: multiply;
-  }
-
-  .hero-image {
-    display: none;
   }
 
   .contact-us-button-hero {
@@ -858,16 +871,7 @@ button {
   }
 }
 
-/* Medium screens: 2 columns */
-@media (max-width: 992px) {
-  .benefits {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+/* RESPONSIVE DESIGN */
+.mari {
+  padding-top: 100px;
 }
