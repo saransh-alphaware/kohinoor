@@ -15,27 +15,11 @@
     />
 
     <link href="./css/style.css" rel="stylesheet" />
-    <title>Company Name - Curtain Accessories & Track Manufacturer</title>
+    <title>Kohinoor Name - Curtain Accessories & Track Manufacturer</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <div class="contact-info">
-          <div class="contact-item">
-            <span>Наш адрес:</span> <br />
-            <span>г. Бишкек, ул. Ляляля 69</span>
-          </div>
-          <div class="contact-item">
-            <span>График работы:</span> <br />
-            <span>С 8:00 до 22:00 без выходных</span>
-          </div>
-          <div></div>
-          <div class="contact-item">
-            <span>+7 (708) 51 51 518</span> <br />
-            <span>+7 (708) 51 51 518</span>
-          </div>
-        </div>
-        <hr />
         <nav class="navbar">
           <img
             src="./icons/kohinoor-logo.png"
@@ -43,10 +27,35 @@
             alt="Kohinoor Logo"
           />
           <ul class="nav-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#catalog">Catalog</a></li>
+            <li>
+              <a href="#home" class="page-scroll navi-link" data-target="home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about-us"
+                class="page-scroll navi-link"
+                data-target="about-us"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#products"
+                class="page-scroll navi-link"
+                data-target="products"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                href="#catalog"
+                class="page-scroll navi-link"
+                data-target="catalog"
+                >Catalog</a
+              >
+            </li>
           </ul>
           <button class="contact-us-button">Contact Us</button>
           <button class="hamburger" id="hamburger">☰</button>
@@ -62,12 +71,22 @@
           </p>
           <button class="contact-us-button-hero">Know More</button>
         </div>
-        <div class="hero-image"></div>
-        <img
-          src="./icons/vehicle.png"
-          alt="kohinoor brand"
-          class="hero-image-mobile"
-        />
+        <div class="gallery gallery-cards">
+          <div class="images panel">
+            <div class="slide" data-order="1">
+              <img src="./images/Roman Veneus/roman.jpeg" alt="" />
+            </div>
+            <div class="slide" data-order="2">
+              <img src="./images/home Page/2.jpg" alt="" />
+            </div>
+            <div class="slide" data-order="3">
+              <img src="../images/TIC BACK/1200 wood coper/1200.JPG" alt="" />
+            </div>
+            <div class="slide" data-order="4">
+              <img src="./images/home Page/4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="about-us">
@@ -87,53 +106,88 @@
       <section id="products" class="products-section">
         <h2>Products</h2>
         <div class="products-grid">
-          <div class="product">
+          <div class="product" onclick="products.html">
             <div class="product-image">
-              <img src="./icons/vehicle.png" alt="Product 1" />
+              <a href="products.html">
+                <img
+                  src="./images/3 WAY/3way.jpeg"
+                  alt="Imp Three Way Manual Track"
+                />
+              </a>
             </div>
-            <p>Product 1</p>
+            <p>Imp Three Way Manual Track</p>
           </div>
           <div class="product">
             <div class="product-image">
-              <img src="./icons/vehicle.png" alt="Product 1" />
+              <img
+                src="./images/4 WAY/4way.jpeg"
+                alt="Imp Four Way Manual Track"
+              />
             </div>
-            <p>Product 1</p>
+            <p>Imp Four Way Manual Track</p>
           </div>
           <div class="product">
             <div class="product-image">
-              <img src="./icons/vehicle.png" alt="Product 1" />
+              <img
+                src="./images/1005/1005.jpeg"
+                alt="Imp 1005 Flexible Ivory Track"
+              />
             </div>
-            <p>Product 1</p>
+            <p>Imp 1005 Flexible Ivory Track</p>
           </div>
           <div class="product">
             <div class="product-image">
-              <img src="./icons/vehicle.png" alt="Product 1" />
+              <img
+                src="./images/TIC BACK/1200 wood coper/1200.JPG"
+                alt="1200 Wood Cooper"
+              />
             </div>
-            <p>Product 1</p>
+            <p>1200 Wood Cooper</p>
           </div>
           <div class="product">
             <div class="product-image">
-              <img src="./icons/vehicle.png" alt="Product 1" />
+              <img
+                src="./images/TIC BACK/1218 wood ss/1218.JPG"
+                alt="1218 Wood SS"
+              />
             </div>
-            <p>Product 1</p>
+            <p>1218 Wood SS</p>
           </div>
           <div class="product">
             <div class="product-image">
-              <img src="./icons/vehicle.png" alt="Product 1" />
+              <img
+                src="./images/TIC BACK/1220 anti gold/1220.JPG"
+                alt="1220 Antic Gold"
+              />
             </div>
-            <p>Product 1</p>
+            <p>1220 Antic Gold</p>
           </div>
           <div class="product">
             <div class="product-image">
-              <img src="./icons/vehicle.png" alt="Product 1" />
+              <img
+                src="./images/Motor/KC52/KC52.jpeg"
+                alt="Imp Kohinoor Curtain Motor"
+              />
             </div>
-            <p>Product 1</p>
+            <p>Imp Kohinoor Curtain Motor</p>
           </div>
           <div class="product">
             <div class="product-image">
-              <img src="./icons/vehicle.png" alt="Product 1" />
+              <img
+                src="./images/1013/1013.jpeg"
+                alt="Imp 1013 Pvc Electro Cotting white"
+              />
             </div>
-            <p>Product 1</p>
+            <p>Imp 1013 Pvc Electro Cotting white</p>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <img
+                src="./images/Roman Veneus/roman.jpeg"
+                alt="Imp Veneus Roman"
+              />
+            </div>
+            <p>Imp Veneus Roman</p>
           </div>
         </div>
         <div id="catalog" class="buttons">
@@ -228,7 +282,7 @@
         </div>
         <div class="get-in-touch">
           <h2>Get in Touch Now</h2>
-          <img src="./icons/Arrow.png" alt="Get in Touch Now" />
+          <i class="fa-solid fa-arrow-right"></i>
         </div>
       </section>
 
@@ -242,7 +296,7 @@
             </p>
           </div>
           <div class="card-image">
-            <img src="./icons/vehicle.png" alt="Автозапчасти" />
+            <img src="/images/Motor/KC52/KC52.jpeg" alt="Автозапчасти" />
           </div>
         </div>
         <div class="card">
@@ -254,7 +308,7 @@
             </p>
           </div>
           <div class="card-image">
-            <img src="./icons/vehicle.png" alt="Мойка авто" />
+            <img src="./images/1013/1013.jpeg" alt="Мойка авто" />
           </div>
         </div>
         <div class="card">
@@ -266,7 +320,7 @@
             </p>
           </div>
           <div class="card-image">
-            <img src="./icons/vehicle.png" alt="Аксессуары" />
+            <img src="./images/1005/1005.jpeg" alt="Аксессуары" />
           </div>
         </div>
         <div class="card">
@@ -278,7 +332,7 @@
             </p>
           </div>
           <div class="card-image">
-            <img src="./icons/vehicle.png" alt="Замена масла" />
+            <img src="./images/4 WAY/4way.jpeg" alt="Замена масла" />
           </div>
         </div>
       </section>
@@ -298,7 +352,7 @@
           </p>
         </div>
         <div class="about-image">
-          <img src="./icons/vehicle.png" alt="About Us" />
+          <img src="./images/about.jpeg" alt="About Us" />
         </div>
       </section>
 
@@ -401,7 +455,7 @@
         </div>
 
         <div class="footer-bottom">
-          <p>&copy; 2025 Company Name. All Rights Reserved.</p>
+          <p>&copy; 2025 Kohinoor. All Rights Reserved.</p>
         </div>
       </footer>
 
@@ -423,6 +477,57 @@
       hamburger.addEventListener("click", () => {
         navMenu.classList.toggle("show");
       });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll(".navi-link");
+        links.forEach(function (link) {
+          link.addEventListener("click", function (event) {
+            // Add active class to the clicked link
+            links.forEach(function (item) {
+              item.classList.remove("active");
+            });
+            this.classList.add("active");
+            const targetId = this.getAttribute("data-target");
+            const targetContainer = document.getElementById(targetId);
+            targetContainer.classList.add("mari");
+          });
+        });
+      });
+
+      (function () {
+        const galleries = document.querySelectorAll(".gallery-cards");
+        if (!document.documentElement.classList || galleries.length === 0)
+          return;
+
+        galleries.forEach((gallery) => {
+          const images = gallery.querySelector(".images");
+          const imageSlides = images.querySelectorAll(".slide");
+          const length = imageSlides.length;
+
+          setInterval(() => {
+            requestAnimationFrame(() => animateSlides(imageSlides, length));
+          }, 4000);
+        });
+
+        function animateSlides(imageSlides, length) {
+          imageSlides.forEach((slide) => {
+            const order = parseInt(slide.dataset.order);
+            if (order === 1) {
+              slide.classList.add("leave");
+              slide.dataset.order = length;
+              slide.addEventListener("transitionend", handleTransitionEnd, {
+                once: true,
+              });
+            } else {
+              slide.dataset.order = order - 1;
+            }
+          });
+        }
+
+        function handleTransitionEnd(e) {
+          this.classList.remove("leave");
+        }
+      })();
     </script>
   </body>
 </html>
