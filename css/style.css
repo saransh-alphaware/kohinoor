@@ -59,7 +59,7 @@ header {
 .nav-menu li a {
   text-decoration: none;
   margin: auto 40px;
-  /* color: #333333; */
+  color: #FFF;
   font-weight: 600;
   font-size: 1rem;
   transition: color 0.3s ease-in-out;
