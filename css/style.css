@@ -34,6 +34,7 @@ header {
   left: 50%;
   transform: translateX(-50%);
   background: rgba(255, 255, 255, 0.9); /* Floating effect */
+  background-color: #000;
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 12px 20px;
@@ -41,6 +42,7 @@ header {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  color: #FFF;
   z-index: 1000;
 }
 
@@ -759,7 +761,9 @@ button {
     padding: 0px;
     top: 0;
     border-radius: 0;
+    color: #FFF;
     background: white; /* Solid background */
+    background-color: #000;
     backdrop-filter: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
