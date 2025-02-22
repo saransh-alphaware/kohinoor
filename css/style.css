@@ -42,7 +42,7 @@ header {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  color: #FFF;
+  color: #fff;
   z-index: 1000;
 }
 
@@ -59,7 +59,7 @@ header {
 .nav-menu li a {
   text-decoration: none;
   margin: auto 40px;
-  color: #FFF;
+  color: #fff;
   font-weight: 600;
   font-size: 1rem;
   transition: color 0.3s ease-in-out;
@@ -133,70 +133,6 @@ header {
   background: #0056b3;
 }
 
-.slide > img {
-  max-width: 100%;
-}
-
-.gallery {
-  height: 600px;
-  width: 50%;
-  display: flex;
-}
-
-.gallery,
-.gallery .slide {
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-.gallery-cards .panel {
-  position: relative;
-  flex: 1;
-}
-
-.gallery-cards .slide {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 0;
-  transform: translateY(-50%) translateX(-50%);
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-out;
-}
-
-.gallery-cards .images {
-  overflow-y: hidden;
-  perspective: 1000;
-}
-
-.gallery-cards .images .slide[data-order="1"] {
-  transform: translateY(-50%) translateX(-50%) translateZ(0) scale(1);
-  z-index: 1004;
-}
-
-.gallery-cards .images .slide[data-order="2"] {
-  transform: translateY(-60%) translateX(-40%) translateZ(-50px) scale(0.95);
-  z-index: 1003;
-  opacity: 0.85;
-}
-
-.gallery-cards .images .slide[data-order="3"] {
-  transform: translateY(-70%) translateX(-30%) translateZ(-100px) scale(0.9);
-  z-index: 1002;
-  opacity: 0.7;
-}
-
-.gallery-cards .images .slide[data-order="4"] {
-  transform: translateY(-80%) translateX(-20%) translateZ(-150px) scale(0.85);
-  z-index: 1001;
-  opacity: 0;
-}
-
-.gallery-cards .images .slide.leave {
-  transform: translateY(0) translateX(-50%) translateZ(0);
-  z-index: 1005;
-}
-
 /* About Us Section */
 .about-us {
   background-color: #fff;
@@ -205,7 +141,7 @@ header {
 }
 
 .about-us h2 {
-  font-size: 35px;
+  font-size: 2rem;
   font-weight: 800;
   margin-bottom: 20px;
   color: #000;
@@ -214,7 +150,7 @@ header {
 .about-us p {
   display: flex;
   flex-direction: column;
-  font-size: 18spx;
+  font-size: 1rem;
   margin-bottom: 30px;
 }
 
@@ -578,20 +514,46 @@ button {
 
 /* Left Section - Contact Info */
 .physical-contact-info {
+  display: flex;
   padding-left: 30px;
   width: 50%;
 }
 
 .physical-contact-info h2 {
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
   color: #333;
   margin-bottom: 15px;
 }
 
-.physical-contact-info p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 10px;
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+  background-color: #fff;
+  border: 0px solid black;
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.contact-icons i {
+  font-size: 1.1rem;
+  margin: 14px 0;
+  color: #4a6652;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-details p {
+  margin: 10px 0;
+  color: #333;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
 }
 
 /* Right Section - Google Maps */
@@ -627,7 +589,7 @@ button {
 
 .footer-column h3 {
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .footer-column ul {
@@ -671,7 +633,7 @@ button {
 
 .social-icons a {
   color: white;
-  font-size: 20px;
+  font-size: 1.4rem;
   transition: 0.3s;
 }
 
@@ -681,7 +643,7 @@ button {
 
 .footer-bottom {
   margin-top: 30px;
-  font-size: 14px;
+  font-size: 0.8rem;
   opacity: 0.8;
   text-align: center;
 }
@@ -697,7 +659,7 @@ button {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease-in-out;
@@ -716,6 +678,96 @@ button {
   left: 20px;
   background-color: #007bff;
 }
+
+/* hfgsdgf */
+
+.product-name {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+  position: absolute;
+  bottom: 10px; /* Adjust positioning */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.7); /* Optional: Adds contrast */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.slider {
+  --speed: 50; /* Animation speed */
+  --containerWidth: 50%; /* Set to 50% of the website width */
+  --inset: 0;
+  --itemsWidth: clamp(60px, 20vw, 350px); /* Adjusted for smaller container */
+
+  width: var(--containerWidth);
+  margin-inline: auto;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+  }
+
+  .slide {
+    display: grid;
+    place-content: center;
+    aspect-ratio: 1/1; /* Ensures square shape */
+    width: var(--itemsWidth);
+    border-radius: 5px;
+    overflow: hidden; /* Ensures images don’t overflow */
+
+    /* Animation */
+    --duration: calc(var(--speed) * 1s);
+    --delay: calc(
+      (var(--duration) / var(--count)) * (var(--index) - var(--count))
+    );
+    --origin-x: calc(((var(--count) - var(--index)) + var(--inset, 0)) * 100%);
+    --destination-x: calc(calc((var(--index) + 1 + var(--outset, 0)) * -100%));
+    animation: slider var(--duration) var(--delay) infinite linear paused;
+    translate: var(--origin-x) 0;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the square without distortion */
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .slider .slide {
+    animation-play-state: running;
+  }
+}
+
+@keyframes slider {
+  to {
+    translate: var(--destination-x) 0;
+  }
+}
+
+/* ddfdsf */
 
 /* Small screens: 1 column */
 @media (max-width: 600px) {
@@ -748,7 +800,7 @@ button {
   .floating-button {
     width: 50px;
     height: 50px;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
@@ -761,7 +813,7 @@ button {
     padding: 0px;
     top: 0;
     border-radius: 0;
-    color: #FFF;
+    color: #fff;
     background: white; /* Solid background */
     background-color: #000;
     backdrop-filter: none;
@@ -800,11 +852,6 @@ button {
     padding-right: 0;
     padding-left: 0;
     margin-bottom: 30px;
-  }
-
-  .gallery {
-    height: 300px;
-    width: 100%;
   }
 
   .hero h1 {
