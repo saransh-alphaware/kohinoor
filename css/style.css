@@ -1,9 +1,8 @@
-/* General Reset */
 :root {
-  --hero-text: 3rem;
-  --section-heading: 2.5rem;
-  --small-heading: 1.2rem;
-  --description: 1rem;
+  --hero-text: clamp(2rem, 5vw, 3rem);
+  --section-heading: clamp(1.8rem, 4vw, 2.5rem);
+  --small-heading: clamp(1rem, 2.5vw, 1.2rem);
+  --description: clamp(0.875rem, 2vw, 1rem);
 }
 
 * {
@@ -24,7 +23,6 @@ body {
 }
 
 .container {
-  max-width: 1376px;
   margin: 0 auto;
 }
 
@@ -35,8 +33,7 @@ header {
 
 .navbar {
   position: fixed;
-  width: 98%; /* Adjusted for responsiveness */
-  max-width: 1376px;
+  width: 98%;
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
@@ -98,7 +95,7 @@ header {
   justify-content: space-between;
   padding: 50px 0;
   margin-top: 100px;
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 
 .hero-content {
@@ -170,7 +167,6 @@ header {
   .slide {
     display: grid;
     place-content: center;
-    aspect-ratio: 1/1; /* Ensures square shape */
     width: var(--itemsWidth);
     border-radius: 5px;
     overflow: hidden; /* Ensures images don’t overflow */
@@ -188,12 +184,14 @@ header {
 
   .name-with-product {
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    align-items: center;
   }
 
   .slide img {
-    width: 360px; /* Set a fixed width */
-    height: 300px; /* Set a fixed height */
+    width: 100%; /* Set a fixed width */
+    height: 85%; /* Set a fixed height */
     border-radius: 15px;
     object-fit: cover; /* Ensures images fill the container without distortion */
   }
@@ -238,18 +236,34 @@ header {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
+  height: 80vh; /* Set height to 80% of viewport height */
+  overflow: hidden; /* Prevent overflow */
+  padding: 20px;
+}
+
+/* Image Section */
+.image-section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .curtain-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fits well */
   border-radius: 8px;
 }
 
+/* Content Section */
 .content-section {
-  padding: 20px;
+  padding: 0px;
+  max-height: 100%;
+  overflow: auto; /* Prevents content from overflowing */
 }
 
+/* Typography */
 .subtitle {
   color: #666;
   font-size: 14px;
@@ -257,43 +271,45 @@ header {
 }
 
 .title {
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 18px; /* Slightly reduced for compactness */
+  margin-bottom: 10px;
   color: #2c2c2c;
-  line-height: 1.2;
 }
 
 .description {
   color: #666;
-  margin-bottom: 40px;
-  line-height: 1.6;
+  margin-bottom: 30px;
 }
 
+/* Accessories Grid */
 .accessories-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 15px;
 }
 
 .accessory-item {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .accessory-image {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
-  margin-bottom: 15px;
+  /* margin-bottom: 10px; */
 }
 
 .accessory-title {
-  font-size: 16px;
+  font-size: 14px;
   color: #2c2c2c;
-  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 /* Products Section */
@@ -316,8 +332,9 @@ header {
   font-size: 1rem;
   font-weight: bold;
   color: #555;
-  bottom: 10px;
   background: #f2f2f2;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 
 /* Buttons */
@@ -1015,16 +1032,14 @@ button {
   .slide {
     display: grid;
     place-content: center;
-    aspect-ratio: 2 / 3; /* More height for better visuals */
     width: var(--itemsWidth);
-    border-radius: 12px;
     overflow: hidden;
     animation: slider var(--duration) var(--delay) infinite linear paused;
   }
 
   .slide img {
-    width: 180px !important; /* Set a fixed width */
-    height: 150px !important; /* Set a fixed height */
+    width: 100%; /* Set a fixed width */
+    height: 85%; /* Set a fixed height */
     border-radius: 15px;
     object-fit: cover; /* Ensures images fill the container without distortion */
   }
