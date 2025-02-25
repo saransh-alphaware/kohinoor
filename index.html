@@ -3,825 +3,1061 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kohinoor Name - Curtain Accessories & Track Manufacturer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2C3E50",
+              secondary: "#E67E22",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link href="./css/style.css" rel="stylesheet" />
-    <title>Kohinoor Name - Curtain Accessories & Track Manufacturer</title>
+    <style>
+      :where([class^="ri-"])::before {
+        content: "\f3c2";
+      }
+      .category-card:hover .category-overlay {
+        opacity: 1;
+      }
+      .product-card:hover .quick-view {
+        opacity: 1;
+      }
+    </style>
   </head>
-  <body>
-    <div class="container">
-      <header>
-        <nav class="navbar">
+  <body class="bg-white min-h-screen">
+    <div class="bg-primary text-white py-2">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <div class="text-sm">All India Delivery</div>
+        <div class="flex items-center space-x-4 text-sm">
+          <span>Call: 1-800-1800</span>
+          <span>Call: 1-800-1800</span>
+        </div>
+      </div>
+    </div>
+
+    <header
+      class="fixed w-[98%] justify-between left-1/2 -translate-x-1/2 bg-primary backdrop-blur-md shadow-lg z-50 rounded-lg"
+    >
+      <nav class="w-full flex items-center justify-between px-6 py-4">
+        <!-- Logo -->
+        <a href="#" class="flex-shrink-0">
           <img
             src="./icons/kohinoor-logo.png"
-            class="logo"
             alt="Kohinoor Logo"
+            class="w-28"
           />
-          <ul class="nav-menu">
-            <li>
-              <a href="#home" class="page-scroll navi-link" data-target="home">
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#about-us"
-                class="page-scroll navi-link"
-                data-target="about-us"
-              >
-                About Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="#products"
-                class="page-scroll navi-link"
-                data-target="products"
-              >
-                Products
-              </a>
-            </li>
-            <li>
-              <a
-                href="#catalog"
-                class="page-scroll navi-link"
-                data-target="catalog"
-              >
-                Catalog
-              </a>
-            </li>
-          </ul>
-          <button class="contact-us-button small-heading">Contact Us</button>
-          <button class="hamburger" id="hamburger">
-            <i class="fa-solid fa-bars" style="color: #fff"></i>
-          </button>
-        </nav>
-      </header>
+        </a>
 
-      <section id="home" class="hero">
-        <div class="hero-content">
-          <h1>Affordable Curtain Service</h1>
-          <p class="description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
-            deserunt provident reiciendis, fugit reprehenderit
-          </p>
-          <button class="contact-us-button-hero small-heading">
-            Know More
-          </button>
-        </div>
-        <div class="slider" style="--count: 8">
-          <ul>
-            <li class="slide" style="--index: 0; aspect-ratio: 1/1">
-              <img
-                src="./images/Roman Veneus/roman.jpeg"
-                alt="Image 1"
-                style="width: 100%; height: 95%"
-              />
-            </li>
-            <li class="slide" style="--index: 1; aspect-ratio: 1/1">
-              <img
-                src="./images/home Page/2.jpg"
-                alt="Image 2"
-                style="width: 100%; height: 95%"
-              />
-            </li>
-            <li class="slide" style="--index: 2; aspect-ratio: 1/1">
-              <img
-                src="./images/TIC BACK/1200 wood coper/1200.JPG"
-                alt="Image 3"
-                style="width: 100%; height: 95%"
-              />
-            </li>
-            <li class="slide" style="--index: 3; aspect-ratio: 1/1">
-              <img
-                src="./images/home Page/4.JPG"
-                alt="Image 4"
-                style="width: 100%; height: 95%"
-              />
-            </li>
-            <li class="slide" style="--index: 4; aspect-ratio: 1/1">
-              <img
-                src="./images/Roman Veneus/roman.jpeg"
-                alt="Image 1"
-                style="width: 100%; height: 95%"
-              />
-            </li>
-            <li class="slide" style="--index: 5; aspect-ratio: 1/1">
-              <img
-                src="./images/home Page/2.jpg"
-                alt="Image 2"
-                style="width: 100%; height: 95%"
-              />
-            </li>
-            <li class="slide" style="--index: 6; aspect-ratio: 1/1">
-              <img
-                src="./images/TIC BACK/1200 wood coper/1200.JPG"
-                alt="Image 3"
-                style="width: 100%; height: 95%"
-              />
-            </li>
-            <li class="slide" style="--index: 7; aspect-ratio: 1/1">
-              <img
-                src="./images/home Page/4.JPG"
-                alt="Image 4"
-                style="width: 100%; height: 95%"
-              />
-            </li>
-          </ul>
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex items-center space-x-8">
+          <li>
+            <a
+              href="#home"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about-us"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="#products"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a
+              href="#catalog"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Catalog</a
+            >
+          </li>
+        </ul>
+
+        <!-- Contact Button -->
+        <button
+          class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition"
+        >
+          Contact Us
+        </button>
+
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger" class="md:hidden text-white text-2xl">
+          <i class="ri-menu-line"></i>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden flex flex-col items-center bg-primary text-white py-4 space-y-4"
+      >
+        <a href="#home" class="block hover:text-blue-400 transition">Home</a>
+        <a href="#about-us" class="block hover:text-blue-400 transition"
+          >About Us</a
+        >
+        <a href="#products" class="block hover:text-blue-400 transition"
+          >Products</a
+        >
+        <a href="#catalog" class="block hover:text-blue-400 transition"
+          >Catalog</a
+        >
+        <button
+          class="bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition"
+        >
+          Contact Us
+        </button>
+      </div>
+    </header>
+    <main>
+      <section
+        class="relative h-[600px] bg-cover bg-center"
+        style="
+          background-image: url('https://public.readdy.ai/ai/img_res/8d8d050c18009bf3d12c4b90d020fb4b.jpg');
+        "
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"
+        ></div>
+        <div class="container mx-auto px-4 h-full flex items-center">
+          <div class="max-w-xl text-white relative">
+            <h1 class="text-5xl font-bold mb-6">
+              Transform Your Windows into Masterpieces
+            </h1>
+            <p class="text-xl mb-8">
+              Discover our premium collection of curtain accessories that blend
+              style with functionality. Elevate your home décor with our
+              carefully curated selection.
+            </p>
+            <button
+              class="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-button text-lg font-medium whitespace-nowrap"
+            >
+              Shop Now
+            </button>
+          </div>
         </div>
       </section>
 
-      <section class="about-us">
-        <h2>India’s Leading Curtain accessories and Track Manufacturer</h2>
-        <p>
-          <span>
-            We offer a variety of aluminum shapes, motorized and extendable
-            rods, curtain rods, curtain boxes, and straight and curved tracks.
-            Kohinoor combines design, production, and research and development
-            to create window décor solutions for the global market, in addition
-            to providing full OEM and ODM services for curtain products at low
-            pricing.
-          </span>
-        </p>
-      </section>
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-12">Shop by Category</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="category-card relative rounded-lg overflow-hidden shadow-lg group"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/007ff968f8dc5ff700c9cc4dd84f6497.jpg"
+                alt="Curtain Rods"
+                class="w-full h-64 object-cover"
+              />
+              <div
+                class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300"
+              >
+                <div class="text-center text-white">
+                  <h3 class="text-2xl font-bold mb-2">Curtain Rods</h3>
+                  <p class="mb-4">30+ Styles Available</p>
+                  <button
+                    class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
+                  >
+                    View Collection
+                  </button>
+                </div>
+              </div>
+            </div>
 
-      <section class="curtain-section">
-        <div class="image-section">
-          <img
-            src="./images/home Page/2.jpg"
-            alt="Elegant grey curtains"
-            class="curtain-image"
-          />
-        </div>
-        <div class="content-section">
-          <h1 class="title">Elevate Your Window Decor</h1>
-          <p class="description">
-            Discover a wide range of curtain accessories, from sleek aluminum
-            tracks to elegant brass hooks, all designed to bring out the best in
-            your window treatments.
-          </p>
+            <div
+              class="category-card relative rounded-lg overflow-hidden shadow-lg group"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/8dca3b6c82ff243045a7153d017b709a.jpg"
+                alt="Brackets"
+                class="w-full h-64 object-cover"
+              />
+              <div
+                class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300"
+              >
+                <div class="text-center text-white">
+                  <h3 class="text-2xl font-bold mb-2">Brackets</h3>
+                  <p class="mb-4">25+ Styles Available</p>
+                  <button
+                    class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
+                  >
+                    View Collection
+                  </button>
+                </div>
+              </div>
+            </div>
 
-          <div class="accessories-grid">
-            <div class="accessory-item">
+            <div
+              class="category-card relative rounded-lg overflow-hidden shadow-lg group"
+            >
               <img
-                src="./images/TIC BACK/1200 wood coper/1200.JPG"
-                alt="Curtain Rings"
-                class="accessory-image"
+                src="https://public.readdy.ai/ai/img_res/fe7f4207ce5d5adc743d652d6ed927aa.jpg"
+                alt="Finials"
+                class="w-full h-64 object-cover"
               />
-              <h3 class="accessory-title">Curtain Rings</h3>
+              <div
+                class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300"
+              >
+                <div class="text-center text-white">
+                  <h3 class="text-2xl font-bold mb-2">Finials</h3>
+                  <p class="mb-4">40+ Styles Available</p>
+                  <button
+                    class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
+                  >
+                    View Collection
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="accessory-item">
+
+            <div
+              class="category-card relative rounded-lg overflow-hidden shadow-lg group"
+            >
               <img
-                src="./images/TIC BACK/1200 wood coper/1200.JPG"
-                alt="Curtain Hooks"
-                class="accessory-image"
+                src="https://public.readdy.ai/ai/img_res/007ff968f8dc5ff700c9cc4dd84f6497.jpg"
+                alt="Curtain Rods"
+                class="w-full h-64 object-cover"
               />
-              <h3 class="accessory-title">Curtain Hooks</h3>
+              <div
+                class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300"
+              >
+                <div class="text-center text-white">
+                  <h3 class="text-2xl font-bold mb-2">Curtain Rods</h3>
+                  <p class="mb-4">30+ Styles Available</p>
+                  <button
+                    class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
+                  >
+                    View Collection
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="accessory-item">
+
+            <div
+              class="category-card relative rounded-lg overflow-hidden shadow-lg group"
+            >
               <img
-                src="./images/TIC BACK/1200 wood coper/1200.JPG"
-                alt="Bracket Design"
-                class="accessory-image"
+                src="https://public.readdy.ai/ai/img_res/8dca3b6c82ff243045a7153d017b709a.jpg"
+                alt="Brackets"
+                class="w-full h-64 object-cover"
               />
-              <h3 class="accessory-title">Design Bracket</h3>
+              <div
+                class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300"
+              >
+                <div class="text-center text-white">
+                  <h3 class="text-2xl font-bold mb-2">Brackets</h3>
+                  <p class="mb-4">25+ Styles Available</p>
+                  <button
+                    class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
+                  >
+                    View Collection
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="accessory-item">
+
+            <div
+              class="category-card relative rounded-lg overflow-hidden shadow-lg group"
+            >
               <img
-                src="./images/TIC BACK/1200 wood coper/1200.JPG"
-                alt="Support Bracket"
-                class="accessory-image"
+                src="https://public.readdy.ai/ai/img_res/fe7f4207ce5d5adc743d652d6ed927aa.jpg"
+                alt="Finials"
+                class="w-full h-64 object-cover"
               />
-              <h3 class="accessory-title">Support Bracket</h3>
+              <div
+                class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300"
+              >
+                <div class="text-center text-white">
+                  <h3 class="text-2xl font-bold mb-2">Finials</h3>
+                  <p class="mb-4">40+ Styles Available</p>
+                  <button
+                    class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
+                  >
+                    View Collection
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="products" class="products-section">
-        <h2>Products</h2>
-        <section>
-          <section class="product-slider">
-            <div class="slider" style="--count: 12; --containerWidth: 100%">
-              <ul>
-                <li class="slide" style="--index: 0">
-                  <div class="name-with-product">
-                    <img src="./images/Roman Veneus/roman.jpeg" alt="Image 1" />
-                    <p class="product-name">Product 1</p>
+      <section class="py-16">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center mb-8">
+            <h2 class="text-3xl font-bold">Best Sellers</h2>
+            <button
+              class="text-secondary hover:text-secondary/80 font-medium flex items-center"
+            >
+              View All
+              <i class="ri-arrow-right-line ml-2"></i>
+            </button>
+          </div>
+
+          <div class="splide" id="bestsellers-splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <!-- Product 1 -->
+                <li class="splide__slide">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://public.readdy.ai/ai/img_res/f15cf434c5d7c01801a4b1a12eca2588.jpg"
+                        alt="Premium Adjustable Curtain Rod"
+                        class="w-full h-64 object-cover"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium mb-2">
+                        Premium Adjustable Curtain Rod
+                      </h3>
+                    </div>
                   </div>
                 </li>
-                <li class="slide" style="--index: 1">
-                  <div class="name-with-product">
-                    <img src="./images/home Page/2.jpg" alt="Image 2" />
-                    <p class="product-name">Product 1</p>
+
+                <!-- Product 2 -->
+                <li class="splide__slide">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://public.readdy.ai/ai/img_res/e9578226d75fa16f43bc93faf93dc8c8.jpg"
+                        alt="Modern Curtain Brackets"
+                        class="w-full h-64 object-cover"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium mb-2">Modern Curtain Brackets</h3>
+                    </div>
                   </div>
                 </li>
-                <li class="slide" style="--index: 2">
-                  <div class="name-with-product">
-                    <img
-                      src="./images/TIC BACK/1200 wood coper/1200.JPG"
-                      alt="Image 3"
-                    />
-                    <p class="product-name">Product 1</p>
+
+                <!-- Product 3 -->
+                <li class="splide__slide">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://public.readdy.ai/ai/img_res/162ffd7793c698ba35da14a5a83ba5e0.jpg"
+                        alt="Crystal Finial Set"
+                        class="w-full h-64 object-cover"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium mb-2">Crystal Finial Set</h3>
+                    </div>
                   </div>
                 </li>
-                <li class="slide" style="--index: 3">
-                  <div class="name-with-product">
-                    <img src="./images/home Page/4.JPG" alt="Image 4" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 4">
-                  <div class="name-with-product">
-                    <img src="./images/Roman Veneus/roman.jpeg" alt="Image 1" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 5">
-                  <div class="name-with-product">
-                    <img src="./images/home Page/2.jpg" alt="Image 2" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 6">
-                  <div class="name-with-product">
-                    <img
-                      src="./images/TIC BACK/1200 wood coper/1200.JPG"
-                      alt="Image 3"
-                    />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 7">
-                  <div class="name-with-product">
-                    <img src="./images/home Page/4.JPG" alt="Image 4" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 8">
-                  <div class="name-with-product">
-                    <img src="./images/Roman Veneus/roman.jpeg" alt="Image 1" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 9">
-                  <div class="name-with-product">
-                    <img src="./images/home Page/2.jpg" alt="Image 2" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 10">
-                  <div class="name-with-product">
-                    <img
-                      src="./images/TIC BACK/1200 wood coper/1200.JPG"
-                      alt="Image 3"
-                    />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 11">
-                  <div class="name-with-product">
-                    <img src="./images/home Page/4.JPG" alt="Image 4" />
-                    <p class="product-name">Product 1</p>
+
+                <!-- Product 4 -->
+                <li class="splide__slide">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://public.readdy.ai/ai/img_res/c915d4294813f86495001591847e5d66.jpg"
+                        alt="Decorative Curtain Holdback"
+                        class="w-full h-64 object-cover"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium mb-2">
+                        Decorative Curtain Holdback
+                      </h3>
+                    </div>
                   </div>
                 </li>
               </ul>
             </div>
-            <div id="catalog" class="buttons">
-              <button
-                class="see-all"
-                onclick="window.location.href='products.html'"
-              >
-                Know More
-              </button>
-            </div>
-          </section>
-          <section>
-            <h2 class="small-heading">Hooks</h2>
-            <div class="slider" style="--count: 9; --containerWidth: 100%">
-              <ul>
-                <li class="slide" style="--index: 0">
-                  <div class="name-with-product">
-                    <img src="./images/Roman Veneus/roman.jpeg" alt="Image 1" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 1">
-                  <div class="name-with-product">
-                    <img src="./images/home Page/2.jpg" alt="Image 2" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 2">
-                  <div class="name-with-product">
-                    <img
-                      src="./images/TIC BACK/1200 wood coper/1200.JPG"
-                      alt="Image 3"
-                    />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 3">
-                  <div class="name-with-product">
-                    <img src="./images/home Page/4.JPG" alt="Image 4" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 4">
-                  <div class="name-with-product">
-                    <img src="./images/Roman Veneus/roman.jpeg" alt="Image 1" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 5">
-                  <div class="name-with-product">
-                    <img src="./images/home Page/2.jpg" alt="Image 2" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 6">
-                  <div class="name-with-product">
-                    <img
-                      src="./images/TIC BACK/1200 wood coper/1200.JPG"
-                      alt="Image 3"
-                    />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 7">
-                  <div class="name-with-product">
-                    <img src="./images/home Page/4.JPG" alt="Image 4" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 8">
-                  <div class="name-with-product">
-                    <img src="./images/Roman Veneus/roman.jpeg" alt="Image 1" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div id="catalog" class="buttons">
-              <button class="see-all">Know More</button>
-            </div>
-          </section>
-          <section>
-            <h2>Trails</h2>
-            <div class="slider" style="--count: 12; --containerWidth: 100%">
-              <ul>
-                <li class="slide" style="--index: 0">
-                  <div class="name-with-product">
-                    <img src="./images/Roman Veneus/roman.jpeg" alt="Image 1" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 1">
-                  <div class="name-with-product">
-                    <img src="./images/home Page/2.jpg" alt="Image 2" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 2">
-                  <div class="name-with-product">
-                    <img
-                      src="./images/TIC BACK/1200 wood coper/1200.JPG"
-                      alt="Image 3"
-                    />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 3">
-                  <div class="name-with-product">
-                    <img src="./images/home Page/4.JPG" alt="Image 4" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 4">
-                  <div class="name-with-product">
-                    <img src="./images/Roman Veneus/roman.jpeg" alt="Image 1" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 5">
-                  <div class="name-with-product">
-                    <img src="./images/home Page/2.jpg" alt="Image 2" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 6">
-                  <div class="name-with-product">
-                    <img
-                      src="./images/TIC BACK/1200 wood coper/1200.JPG"
-                      alt="Image 3"
-                    />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 7">
-                  <div class="name-with-product">
-                    <img src="./images/home Page/4.JPG" alt="Image 4" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 8">
-                  <div class="name-with-product">
-                    <img src="./images/Roman Veneus/roman.jpeg" alt="Image 1" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 9">
-                  <div class="name-with-product">
-                    <img src="./images/home Page/2.jpg" alt="Image 2" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 10">
-                  <div class="name-with-product">
-                    <img
-                      src="./images/TIC BACK/1200 wood coper/1200.JPG"
-                      alt="Image 3"
-                    />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-                <li class="slide" style="--index: 11">
-                  <div class="name-with-product">
-                    <img src="./images/home Page/4.JPG" alt="Image 4" />
-                    <p class="product-name">Product 1</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div id="catalog" class="buttons">
-              <button class="see-all">Know More</button>
-            </div>
-          </section>
-        </section>
-        <div id="catalog" class="buttons">
-          <button class="download">Download Catalog</button>
-          <button class="see-all">See All Products</button>
-        </div>
-      </section>
-
-      <section class="why-choose-us">
-        <h2>Why Choose Us?</h2>
-        <div class="benefits">
-          <div class="benefit-item">
-            <img src="./icons/IE.png" alt="Industry Experience" />
-            <h2>Industry Experience</h2>
-            <hr />
-            <span
-              >We have over 20 years of experience in the curtain rod industry,
-              with extensive expertise and knowledge. Our experience enables us
-              to consistently deliver high quality.</span
-            >
-          </div>
-          <div class="benefit-item">
-            <img src="./icons/SA.png" alt="Sample Availability" />
-            <h2>Sample Availability</h2>
-            <hr />
-            <span
-              >We have over 20 years of experience in the curtain rod industry,
-              with extensive expertise and knowledge. Our experience enables us
-              to consistently deliver high quality.</span
-            >
-          </div>
-          <div class="benefit-item">
-            <img src="./icons/PC.png" alt="Production Capacity" />
-            <h2>Production Capacity</h2>
-            <hr />
-            <span
-              >We have over 20 years of experience in the curtain rod industry,
-              with extensive expertise and knowledge. Our experience enables us
-              to consistently deliver high quality.</span
-            >
-          </div>
-          <div class="benefit-item">
-            <img src="./icons/ME.png" alt="Modern Equipment" />
-            <h2>Modern Equipment</h2>
-            <hr />
-            <span
-              >We have over 20 years of experience in the curtain rod industry,
-              with extensive expertise and knowledge. Our experience enables us
-              to consistently deliver high quality.</span
-            >
-          </div>
-          <div class="benefit-item">
-            <img src="./icons/QC.png" alt="Quality Certifications" />
-            <h2>Quality Certifications</h2>
-            <hr />
-            <span
-              >We have over 20 years of experience in the curtain rod industry,
-              with extensive expertise and knowledge. Our experience enables us
-              to consistently deliver high quality.</span
-            >
-          </div>
-          <div class="benefit-item">
-            <img src="./icons/FDT.png" alt="Fast Delivery Times" />
-            <h2>Fast Delivery Times</h2>
-            <hr />
-            <span
-              >We have over 20 years of experience in the curtain rod industry,
-              with extensive expertise and knowledge. Our experience enables us
-              to consistently deliver high quality.</span
-            >
-          </div>
-          <div class="benefit-item">
-            <img src="./icons/CMD.png" alt="Custom Molding and Design" />
-            <h2>Custom Molding and Design</h2>
-            <hr />
-            <span
-              >We have over 20 years of experience in the curtain rod industry,
-              with extensive expertise and knowledge. Our experience enables us
-              to consistently deliver high quality.</span
-            >
-          </div>
-          <div class="benefit-item">
-            <img src="./icons/EFM.png" alt="Eco-Friendly Materials" />
-            <h2>Eco-Friendly Materials</h2>
-            <hr />
-            <span
-              >We have over 20 years of experience in the curtain rod industry,
-              with extensive expertise and knowledge. Our experience enables us
-              to consistently deliver high quality.</span
-            >
-          </div>
-        </div>
-        <div class="get-in-touch">
-          <h2>Get in Touch Now</h2>
-          <i class="fa-solid fa-arrow-right"></i>
-        </div>
-      </section>
-
-      <section class="more-product-details">
-        <div class="card">
-          <div class="card-text">
-            <h2>Б/у запчасти для грузовых</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
-              in et, lectus sit lorem id integer.
-            </p>
-          </div>
-          <div class="card-image">
-            <img src="./images/Motor/KC52/KC52.jpeg" alt="Автозапчасти" />
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-            <h2>Автомойка грузовых для грузовых</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
-              in et, lectus sit lorem id integer.
-            </p>
-          </div>
-          <div class="card-image">
-            <img src="./images/1013/1013.jpeg" alt="Мойка авто" />
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-            <h2>Магазин аксессуаров для грузовых</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
-              in et, lectus sit lorem id integer.
-            </p>
-          </div>
-          <div class="card-image">
-            <img src="./images/1005/1005.jpeg" alt="Аксессуары" />
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-            <h2>Пункт замены масла</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
-              in et, lectus sit lorem id integer.
-            </p>
-          </div>
-          <div class="card-image">
-            <img src="./images/4 WAY/4way.jpeg" alt="Замена масла" />
           </div>
         </div>
       </section>
 
-      <section>
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="imgslide"></div>
+      <section class="py-16">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center mb-8">
+            <h2 class="text-3xl font-bold">Best Sellers</h2>
+            <button
+              class="text-secondary hover:text-secondary/80 font-medium flex items-center"
+            >
+              View All
+              <i class="ri-arrow-right-line ml-2"></i>
+            </button>
           </div>
-        </div>
-      </section>
 
-      <section id="about-us" class="about">
-        <div class="about-text">
-          <h2>About Us</h2>
-          <p>
-            Welcome to our company! We specialize in delivering high-quality
-            products and services tailored to meet your needs. Our team is
-            dedicated to providing excellent customer support and innovative
-            solutions. Join us on our journey to excellence.
-          </p>
-          <p>
-            With years of experience and a passion for innovation, we strive to
-            exceed expectations and create a lasting impact in our industry.
-          </p>
-        </div>
-        <div class="about-image">
-          <img src="./images/about.jpeg" alt="About Us" />
-        </div>
-      </section>
-
-      <section class="contact-with-image">
-        <div class="contact-image">
-          <img src="./images/about.jpeg" alt="About Us" />
-        </div>
-        <div class="contact">
-          <h2>Contact Us</h2>
-          <form action="#" method="POST">
-            <div class="input-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="input-group">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" required />
-            </div>
-            <div class="input-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="input-group">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-              ></textarea>
-            </div>
-            <button class="submit" type="submit">Submit</button>
-          </form>
-        </div>
-      </section>
-
-      <section class="physical-contact">
-        <div class="physical-contact-info">
-          <div class="contact-icons">
-            <i class="fas fa-phone"></i>
-            <i class="fas fa-envelope"></i>
-            <i class="fas fa-map-marker-alt"></i>
-            <i class="fas fa-globe"></i>
-          </div>
-          <div class="contact-details">
-            <p>+123-456-7890</p>
-            <p>hello@reallygreatsite.com</p>
-            <p>123 Anywhere St., Any City</p>
-            <p>www.reallygreatsite.com</p>
-          </div>
-        </div>
-        <div class="contact-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434508616!2d144.95373531590445!3d-37.81627944202108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2s!4v1645312511543!5m2!1sen!2s"
-            width="100%"
-            height="300"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+            id="productGrid"
           >
-          </iframe>
-        </div>
-      </section>
-
-      <section class="news-letter">
-        <div class="image-container">
-          <img
-            src="./images/home Page/2.jpg"
-            alt="Elegant grey curtains with tiebacks"
-          />
-        </div>
-        <div class="content">
-          <p class="subtitle">Our Commitment to Quality</p>
-          <h1 class="title">Elevating Your Window Decor with Premium</h1>
-          <p class="description">
-            At [Company Name], we are dedicated to providing our customers with
-            the highest quality curtain accessories that not only elevate the
-            aesthetic appeal of their homes but also offer unparalleled
-            functionality and durability
-          </p>
-
-          <div class="categories">
-            <div class="category">
-              <h3>Curtain Tracks</h3>
+            <div
+              class="product-card bg-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <div class="relative">
+                <img
+                  src="https://public.readdy.ai/ai/img_res/f15cf434c5d7c01801a4b1a12eca2588.jpg"
+                  alt="${product.name}"
+                  class="w-full h-64 object-cover"
+                />
+                <button
+                  class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                >
+                  Quick View
+                </button>
+              </div>
+              <div class="p-4">
+                <h3 class="font-medium mb-2">Premium Adjustable Curtain Rod</h3>
+              </div>
             </div>
-            <div class="category">
-              <h3>Curtain Hooks</h3>
+            <div
+              class="product-card bg-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <div class="relative">
+                <img
+                  src="https://public.readdy.ai/ai/img_res/e9578226d75fa16f43bc93faf93dc8c8.jpg"
+                  alt="${product.name}"
+                  class="w-full h-64 object-cover"
+                />
+                <button
+                  class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                >
+                  Quick View
+                </button>
+              </div>
+              <div class="p-4">
+                <h3 class="font-medium mb-2">Modern Curtain Brackets</h3>
+              </div>
             </div>
-            <div class="category">
-              <h3>Curtain Accessories</h3>
+            <div
+              class="product-card bg-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <div class="relative">
+                <img
+                  src="https://public.readdy.ai/ai/img_res/162ffd7793c698ba35da14a5a83ba5e0.jpg"
+                  alt="${product.name}"
+                  class="w-full h-64 object-cover"
+                />
+                <button
+                  class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                >
+                  Quick View
+                </button>
+              </div>
+              <div class="p-4">
+                <h3 class="font-medium mb-2">Crystal Finial Set</h3>
+              </div>
+            </div>
+            <div
+              class="product-card bg-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <div class="relative">
+                <img
+                  src="https://public.readdy.ai/ai/img_res/c915d4294813f86495001591847e5d66.jpg"
+                  alt="${product.name}"
+                  class="w-full h-64 object-cover"
+                />
+                <button
+                  class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                >
+                  Quick View
+                </button>
+              </div>
+              <div class="p-4">
+                <h3 class="font-medium mb-2">Decorative Curtain Holdback</h3>
+              </div>
             </div>
           </div>
-
-          <a href="#" class="explore-btn">Explore Now</a>
         </div>
       </section>
 
-      <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-column">
-            <div class="footer-logo">
-              <img src="./icons/kohinoor-logo.png" alt="Kohinoor Logo" />
+      <section class="py-16">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center mb-8">
+            <h2 class="text-3xl font-bold">Best Sellers</h2>
+            <button
+              class="text-secondary hover:text-secondary/80 font-medium flex items-center"
+            >
+              View All
+              <i class="ri-arrow-right-line ml-2"></i>
+            </button>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+            id="productGrid"
+          >
+            <div
+              class="product-card bg-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <div class="relative">
+                <img
+                  src="https://public.readdy.ai/ai/img_res/f15cf434c5d7c01801a4b1a12eca2588.jpg"
+                  alt="${product.name}"
+                  class="w-full h-64 object-cover"
+                />
+                <button
+                  class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                >
+                  Quick View
+                </button>
+              </div>
+              <div class="p-4">
+                <h3 class="font-medium mb-2">Premium Adjustable Curtain Rod</h3>
+              </div>
             </div>
-            <div class="footer-contact-info">
-              <p><i class="fas fa-phone"></i> +91 7021963776</p>
-              <p><i class="fas fa-envelope"></i> kohinoortrading@gmail.com</p>
-              <p>
-                <i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra, India
+            <div
+              class="product-card bg-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <div class="relative">
+                <img
+                  src="https://public.readdy.ai/ai/img_res/e9578226d75fa16f43bc93faf93dc8c8.jpg"
+                  alt="${product.name}"
+                  class="w-full h-64 object-cover"
+                />
+                <button
+                  class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                >
+                  Quick View
+                </button>
+              </div>
+              <div class="p-4">
+                <h3 class="font-medium mb-2">Modern Curtain Brackets</h3>
+              </div>
+            </div>
+            <div
+              class="product-card bg-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <div class="relative">
+                <img
+                  src="https://public.readdy.ai/ai/img_res/162ffd7793c698ba35da14a5a83ba5e0.jpg"
+                  alt="${product.name}"
+                  class="w-full h-64 object-cover"
+                />
+                <button
+                  class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                >
+                  Quick View
+                </button>
+              </div>
+              <div class="p-4">
+                <h3 class="font-medium mb-2">Crystal Finial Set</h3>
+              </div>
+            </div>
+            <div
+              class="product-card bg-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <div class="relative">
+                <img
+                  src="https://public.readdy.ai/ai/img_res/c915d4294813f86495001591847e5d66.jpg"
+                  alt="${product.name}"
+                  class="w-full h-64 object-cover"
+                />
+                <button
+                  class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                >
+                  Quick View
+                </button>
+              </div>
+              <div class="p-4">
+                <h3 class="font-medium mb-2">Decorative Curtain Holdback</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-primary text-white py-16">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="flex items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-truck-line text-3xl"></i>
+              </div>
+              <div class="ml-4">
+                <h3 class="font-bold">Free Shipping</h3>
+                <p class="text-sm opacity-80">On orders over $99</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-shield-check-line text-3xl"></i>
+              </div>
+              <div class="ml-4">
+                <h3 class="font-bold">2 Year Warranty</h3>
+                <p class="text-sm opacity-80">100% guarantee</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-customer-service-2-line text-3xl"></i>
+              </div>
+              <div class="ml-4">
+                <h3 class="font-bold">24/7 Support</h3>
+                <p class="text-sm opacity-80">Dedicated support</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-secure-payment-line text-3xl"></i>
+              </div>
+              <div class="ml-4">
+                <h3 class="font-bold">Secure Payment</h3>
+                <p class="text-sm opacity-80">100% secure payment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+              <div
+                class="w-16 h-16 mx-auto mb-4 flex items-center justify-center"
+              >
+                <i class="ri-award-line text-4xl text-secondary"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Premium Quality</h3>
+              <p class="text-gray-600">
+                Our products are crafted from the finest materials to ensure
+                lasting beauty and durability.
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="w-16 h-16 mx-auto mb-4 flex items-center justify-center"
+              >
+                <i class="ri-palette-line text-4xl text-secondary"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Extensive Selection</h3>
+              <p class="text-gray-600">
+                Choose from over 200 unique designs to perfectly match your
+                home's style.
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="w-16 h-16 mx-auto mb-4 flex items-center justify-center"
+              >
+                <i class="ri-tools-line text-4xl text-secondary"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Easy Installation</h3>
+              <p class="text-gray-600">
+                Our products come with detailed instructions and all necessary
+                hardware for hassle-free setup.
               </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="footer-column">
-            <h3>Main Products</h3>
-            <ul>
-              <li><a href="#">Aluminium Curtain Track</a></li>
-              <li><a href="#">Curved Curtain Track</a></li>
-              <li><a href="#">S-Field Curtain Track</a></li>
-              <li><a href="#">Aluminium Curtain Rod</a></li>
-              <li><a href="#">Electric Curtain Track</a></li>
-              <li><a href="#">LED Light Curtain Track</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-column">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Product</a></li>
-              <li><a href="#">OEM & ODM</a></li>
-              <li><a href="#">Factory</a></li>
-              <li><a href="#">Catalog</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-column">
-            <h3>Social Media</h3>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-youtube"></i></a>
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-7xl">
+          <h2 class="text-3xl font-bold text-center mb-12">
+            What Our Customers Say
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <div class="flex text-yellow-400 mb-4">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p class="text-gray-600 mb-4">
+                "Excellent quality curtain rods! The installation was
+                straightforward, and they look absolutely stunning. Highly
+                recommend!"
+              </p>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                <div>
+                  <h4 class="font-semibold">Emily Thompson</h4>
+                  <p class="text-sm text-gray-500">Interior Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <div class="flex text-yellow-400 mb-4">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p class="text-gray-600 mb-4">
+                "The crystal finials I ordered are beautiful and add such
+                elegance to my living room. Great customer service too!"
+              </p>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                <div>
+                  <h4 class="font-semibold">Michael Anderson</h4>
+                  <p class="text-sm text-gray-500">Home Owner</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <div class="flex text-yellow-400 mb-4">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+              </div>
+              <p class="text-gray-600 mb-4">
+                "Fast shipping and the brackets are very sturdy. Perfect for my
+                heavy curtains. Will definitely order again!"
+              </p>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                <div>
+                  <h4 class="font-semibold">Sarah Williams</h4>
+                  <p class="text-sm text-gray-500">Decorator</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="footer-bottom">
-          <p>&copy; 2025 Kohinoor. All Rights Reserved.</p>
+      <section class="bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="bg-white rounded-lg shadow-sm p-6 md:p-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h2 class="text-3xl font-bold mb-6">Get Expert Advice</h2>
+                <p class="text-gray-600 mb-8">
+                  Subscribe to our newsletter for the latest trends, tips, and
+                  exclusive offers.
+                </p>
+                <form class="flex flex-col sm:flex-row gap-4">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    class="w-full sm:flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  />
+                  <button
+                    type="submit"
+                    class="bg-primary text-white w-full sm:w-auto px-6 py-3 rounded-lg whitespace-nowrap hover:bg-primary/90 transition-colors"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+              <div class="hidden md:block">
+                <img
+                  src="https://public.readdy.ai/ai/img_res/5e6553774e8efe53b3e934cc4a0897e2.jpg"
+                  alt="Expert Advice"
+                  class="w-full rounded-lg object-cover"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </footer>
+      </section>
 
-      <a
-        href="https://wa.me/your-number"
-        class="floating-button whatsapp"
-        target="_blank"
+      <section
+        class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 p-5"
       >
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-      <a href="tel:+your-number" class="floating-button call">
-        <i class="fa fa-phone" aria-hidden="true"></i>
-      </a>
-    </div>
+        <div
+          class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden"
+        >
+          <div class="absolute top-5 left-5 w-3/5">
+            <h2 class="text-xl font-semibold text-gray-800">
+              Б/у запчасти для грузовых
+            </h2>
+            <p class="text-gray-700 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
+              in et, lectus sit lorem id integer.
+            </p>
+          </div>
+          <div class="absolute bottom-0 right-0 w-2/5">
+            <img
+              src="./images/Motor/KC52/KC52.jpeg"
+              alt="Автозапчасти"
+              class="max-w-40 mix-blend-multiply"
+            />
+          </div>
+        </div>
+        <div
+          class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden"
+        >
+          <div class="absolute top-5 left-5 w-3/5">
+            <h2 class="text-xl font-semibold text-gray-800">
+              Автомойка грузовых для грузовых
+            </h2>
+            <p class="text-gray-700 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
+              in et, lectus sit lorem id integer.
+            </p>
+          </div>
+          <div class="absolute bottom-0 right-0 w-2/5">
+            <img
+              src="./images/1013/1013.jpeg"
+              alt="Мойка авто"
+              class="max-w-40 mix-blend-multiply"
+            />
+          </div>
+        </div>
+        <div
+          class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden"
+        >
+          <div class="absolute top-5 left-5 w-3/5">
+            <h2 class="text-xl font-semibold text-gray-800">
+              Магазин аксессуаров для грузовых
+            </h2>
+            <p class="text-gray-700 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
+              in et, lectus sit lorem id integer.
+            </p>
+          </div>
+          <div class="absolute bottom-0 right-0 w-2/5">
+            <img
+              src="./images/1005/1005.jpeg"
+              alt="Аксессуары"
+              class="max-w-40 mix-blend-multiply"
+            />
+          </div>
+        </div>
+        <div
+          class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden"
+        >
+          <div class="absolute top-5 left-5 w-3/5">
+            <h2 class="text-xl font-semibold text-gray-800">
+              Пункт замены масла
+            </h2>
+            <p class="text-gray-700 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
+              in et, lectus sit lorem id integer.
+            </p>
+          </div>
+          <div class="absolute bottom-0 right-0 w-2/5">
+            <img
+              src="./images/4 WAY/4way.jpeg"
+              alt="Замена масла"
+              class="max-w-40 mix-blend-multiply"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary text-white py-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div>
+            <a href="#" class="flex-shrink-0 items-center justify-center">
+              <img
+                src="./icons/kohinoor-logo.png"
+                alt="Kohinoor Logo"
+                class="w-28"
+              />
+            </a>
+            <p class="text-gray-400 mb-6">
+              Transform your windows with our premium curtain accessories.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+              >
+                <i class="ri-pinterest-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Contact</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">FAQs</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Customer Service</h3>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Shipping Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Returns & Exchanges</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Track Order</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
+            <ul class="space-y-4">
+              <li class="flex items-center text-gray-400">
+                <i class="ri-map-pin-line mr-3"></i>
+                <span>123 Design Street, New York, NY 10001</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="ri-phone-line mr-3"></i>
+                <span>+1 (555) 123-4567</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="ri-mail-line mr-3"></i>
+                <span>support@curtainpro.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 mt-12 pt-8">
+          <div class="flex flex-wrap justify-between items-center">
+            <p class="text-gray-400">
+              &copy; 2025 CurtainPro. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script>
-      const hamburger = document.getElementById("hamburger");
-      const navMenu = document.querySelector(".nav-menu");
-
-      hamburger.addEventListener("click", () => {
-        navMenu.classList.toggle("show");
-      });
-
       document.addEventListener("DOMContentLoaded", function () {
-        const links = document.querySelectorAll(".navi-link");
-        links.forEach(function (link) {
-          link.addEventListener("click", function (event) {
-            // Add active class to the clicked link
-            links.forEach(function (item) {
-              item.classList.remove("active");
-            });
-            this.classList.add("active");
-            const targetId = this.getAttribute("data-target");
-            const targetContainer = document.getElementById(targetId);
-            targetContainer.classList.add("mari");
+        new Splide("#bestsellers-splide", {
+          type: "loop",
+          perPage: 4,
+          gap: "1rem",
+          arrows: false,
+          pagination: false,
+          pauseOnHover: true, // Optional: pause autoplay on hover
+          breakpoints: {
+            1024: {
+              perPage: 3,
+            },
+            768: {
+              perPage: 2,
+            },
+            640: {
+              perPage: 1,
+            },
+          },
+        }).mount(window.splide.Extensions);
+
+        // Optional: Add hover effect for quick view buttons
+        document.querySelectorAll(".product-card").forEach((card) => {
+          card.addEventListener("mouseenter", () => {
+            card.querySelector(".quick-view").style.opacity = "1";
+          });
+          card.addEventListener("mouseleave", () => {
+            card.querySelector(".quick-view").style.opacity = "0";
           });
         });
+      });
+
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
       });
     </script>
   </body>
