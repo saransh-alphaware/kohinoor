@@ -1,1019 +1,1639 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Kohinoor Name - Curtain Accessories & Track Manufacturer</title>
-      <script src="https://cdn.tailwindcss.com"></script>
-      <script>
-         tailwind.config = {
-           theme: {
-             extend: {
-               colors: {
-                 primary: "#2C3E50",
-                 secondary: "#E67E22",
-               },
-               borderRadius: {
-                 none: "0px",
-                 sm: "4px",
-                 DEFAULT: "8px",
-                 md: "12px",
-                 lg: "16px",
-                 xl: "20px",
-                 "2xl": "24px",
-                 "3xl": "32px",
-                 full: "9999px",
-                 button: "8px",
-               },
-             },
-           },
-         };
-      </script>
-      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
-      <link
-         href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-         rel="stylesheet"
-         />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
-         rel="stylesheet"
-         />
-      <link
-         href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-         rel="stylesheet"
-         />
-      <style>
-         :where([class^="ri-"])::before {
-         content: "\f3c2";
-         }
-         .category-card:hover .category-overlay {
-         opacity: 1;
-         }
-         .product-card:hover .quick-view {
-         opacity: 1;
-         }
-      </style>
-   </head>
-   <body class="bg-white min-h-screen">
-      <header
-         class="fixed w-[98%] justify-between mt-2 left-1/2 -translate-x-1/2 bg-primary backdrop-blur-md shadow-lg z-50 rounded-lg"
-         >
-         <nav class="w-full flex items-center justify-between px-6 py-4">
-            <!-- Logo -->
-            <a href="#" class="flex-shrink-0">
-            <img
-               src="./icons/kohinoor-logo.png"
-               alt="Kohinoor Logo"
-               class="w-28"
-               />
-            </a>
-            <!-- Desktop Navigation -->
-            <ul class="hidden md:flex items-center space-x-8">
-               <li>
-                  <a
-                     href="#home"
-                     class="text-white font-semibold hover:text-blue-400 transition"
-                     >Home</a
-                     >
-               </li>
-               <li>
-                  <a
-                     href="#about-us"
-                     class="text-white font-semibold hover:text-blue-400 transition"
-                     >About Us</a
-                     >
-               </li>
-               <li>
-                  <a
-                     href="#products"
-                     class="text-white font-semibold hover:text-blue-400 transition"
-                     >Products</a
-                     >
-               </li>
-               <li>
-                  <a
-                     href="#catalog"
-                     class="text-white font-semibold hover:text-blue-400 transition"
-                     >Catalog</a
-                     >
-               </li>
-            </ul>
-            <!-- Contact Button -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kohinoor Name - Curtain Accessories & Track Manufacturer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2C3E50",
+              secondary: "#E67E22",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before {
+        content: "\f3c2";
+      }
+      .category-card:hover .category-overlay {
+        opacity: 1;
+      }
+      .product-card:hover .quick-view {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="bg-white min-h-screen">
+    <header
+      class="fixed w-[98%] justify-between mt-2 left-1/2 -translate-x-1/2 bg-primary backdrop-blur-md shadow-lg z-50 rounded-lg"
+    >
+      <nav class="w-full flex items-center justify-between px-6 py-4">
+        <!-- Logo -->
+        <a href="#" class="flex-shrink-0">
+          <img
+            src="./icons/kohinoor-logo.png"
+            alt="Kohinoor Logo"
+            class="w-28"
+          />
+        </a>
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex items-center space-x-8">
+          <li>
+            <a
+              href="#home"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about-us"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="#products"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a
+              href="#catalog"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Catalog</a
+            >
+          </li>
+        </ul>
+        <!-- Contact Button -->
+        <button
+          class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition"
+        >
+          Contact Us
+        </button>
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger" class="md:hidden text-white text-2xl">
+          <i class="ri-menu-line"></i>
+        </button>
+      </nav>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden flex flex-col py-2 bg-primary text-white pl-4 space-y-4 rounded-bl-lg rounded-br-lg"
+      >
+        <a href="#home" class="block hover:text-blue-400 transition">Home</a>
+        <a href="#about-us" class="block hover:text-blue-400 transition"
+          >About Us</a
+        >
+        <a href="#products" class="block hover:text-blue-400 transition"
+          >Products</a
+        >
+        <a href="#catalog" class="block hover:text-blue-400 transition"
+          >Catalog</a
+        >
+      </div>
+    </header>
+    <main>
+      <section
+        class="relative h-[600px] bg-cover bg-center"
+        style="
+          background-image: url('https://public.readdy.ai/ai/img_res/8d8d050c18009bf3d12c4b90d020fb4b.jpg');
+        "
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"
+        ></div>
+        <div class="container mx-auto px-4 h-full flex items-center">
+          <div class="max-w-xl text-white relative">
+            <h1 class="text-5xl font-bold mb-6">
+              Transform Your Windows into Masterpieces
+            </h1>
+            <p class="text-xl mb-8">
+              Discover our premium collection of curtain accessories that blend
+              style with functionality. Elevate your home décor with our
+              carefully curated selection.
+            </p>
             <button
-               class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition"
-               >
-            Contact Us
+              class="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-button text-lg font-medium whitespace-nowrap"
+            >
+              Shop Now
             </button>
-            <!-- Hamburger Menu Button -->
-            <button id="hamburger" class="md:hidden text-white text-2xl">
-            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-12">Shop by Category</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="category-card relative rounded-lg overflow-hidden shadow-lg group"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/007ff968f8dc5ff700c9cc4dd84f6497.jpg"
+                alt="Curtain Rods"
+                class="w-full h-64 object-cover"
+              />
+              <div
+                class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300"
+              >
+                <div class="text-center text-white">
+                  <h3 class="text-2xl font-bold mb-2">Curtain Rods</h3>
+                  <p class="mb-4">30+ Styles Available</p>
+                  <button
+                    class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
+                  >
+                    View Collection
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="category-card relative rounded-lg overflow-hidden shadow-lg group"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/8dca3b6c82ff243045a7153d017b709a.jpg"
+                alt="Brackets"
+                class="w-full h-64 object-cover"
+              />
+              <div
+                class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300"
+              >
+                <div class="text-center text-white">
+                  <h3 class="text-2xl font-bold mb-2">Brackets</h3>
+                  <p class="mb-4">25+ Styles Available</p>
+                  <button
+                    class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
+                  >
+                    View Collection
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="category-card relative rounded-lg overflow-hidden shadow-lg group"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/fe7f4207ce5d5adc743d652d6ed927aa.jpg"
+                alt="Finials"
+                class="w-full h-64 object-cover"
+              />
+              <div
+                class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300"
+              >
+                <div class="text-center text-white">
+                  <h3 class="text-2xl font-bold mb-2">Finials</h3>
+                  <p class="mb-4">40+ Styles Available</p>
+                  <button
+                    class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
+                  >
+                    View Collection
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="category-card relative rounded-lg overflow-hidden shadow-lg group"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/007ff968f8dc5ff700c9cc4dd84f6497.jpg"
+                alt="Curtain Rods"
+                class="w-full h-64 object-cover"
+              />
+              <div
+                class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300"
+              >
+                <div class="text-center text-white">
+                  <h3 class="text-2xl font-bold mb-2">Curtain Rods</h3>
+                  <p class="mb-4">30+ Styles Available</p>
+                  <button
+                    class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
+                  >
+                    View Collection
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="category-card relative rounded-lg overflow-hidden shadow-lg group"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/8dca3b6c82ff243045a7153d017b709a.jpg"
+                alt="Brackets"
+                class="w-full h-64 object-cover"
+              />
+              <div
+                class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300"
+              >
+                <div class="text-center text-white">
+                  <h3 class="text-2xl font-bold mb-2">Brackets</h3>
+                  <p class="mb-4">25+ Styles Available</p>
+                  <button
+                    class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
+                  >
+                    View Collection
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="category-card relative rounded-lg overflow-hidden shadow-lg group"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/fe7f4207ce5d5adc743d652d6ed927aa.jpg"
+                alt="Finials"
+                class="w-full h-64 object-cover"
+              />
+              <div
+                class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300"
+              >
+                <div class="text-center text-white">
+                  <h3 class="text-2xl font-bold mb-2">Finials</h3>
+                  <p class="mb-4">40+ Styles Available</p>
+                  <button
+                    class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
+                  >
+                    View Collection
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-16">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center mb-8">
+            <h2 class="text-3xl font-bold">Tracks</h2>
+            <button
+              class="text-secondary hover:text-secondary/80 font-medium flex items-center"
+              onclick="window.location.href='products.html'"
+            >
+              View All
+              <i class="ri-arrow-right-line ml-2"></i>
             </button>
-         </nav>
-         <!-- Mobile Menu -->
-         <div
-            id="mobile-menu"
-            class="hidden md:hidden flex flex-col py-2 bg-primary text-white pl-4 space-y-4 rounded-bl-lg rounded-br-lg"
-            >
-            <a href="#home" class="block hover:text-blue-400 transition">Home</a>
-            <a href="#about-us" class="block hover:text-blue-400 transition"
-               >About Us</a
-               >
-            <a href="#products" class="block hover:text-blue-400 transition"
-               >Products</a
-               >
-            <a href="#catalog" class="block hover:text-blue-400 transition"
-               >Catalog</a
-               >
-         </div>
-      </header>
-      <main>
-         <section
-            class="relative h-[600px] bg-cover bg-center"
-            style="
-            background-image: url('https://public.readdy.ai/ai/img_res/8d8d050c18009bf3d12c4b90d020fb4b.jpg');
-            "
-            >
-            <div
-               class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"
-               ></div>
-            <div class="container mx-auto px-4 h-full flex items-center">
-               <div class="max-w-xl text-white relative">
-                  <h1 class="text-5xl font-bold mb-6">
-                     Transform Your Windows into Masterpieces
-                  </h1>
-                  <p class="text-xl mb-8">
-                     Discover our premium collection of curtain accessories that blend
-                     style with functionality. Elevate your home décor with our
-                     carefully curated selection.
-                  </p>
-                  <button
-                     class="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-button text-lg font-medium whitespace-nowrap"
-                     >
-                  Shop Now
-                  </button>
-               </div>
-            </div>
-         </section>
-         <section class="py-16 bg-gray-50">
-            <div class="container mx-auto px-4">
-               <h2 class="text-3xl font-bold text-center mb-12">Shop by Category</h2>
-               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          </div>
+          <div class="splide h-fit" id="Tracks">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide py-2">
                   <div
-                     class="category-card relative rounded-lg overflow-hidden shadow-lg group"
-                     >
-                     <img
-                        src="https://public.readdy.ai/ai/img_res/007ff968f8dc5ff700c9cc4dd84f6497.jpg"
-                        alt="Curtain Rods"
-                        class="w-full h-64 object-cover"
-                        />
-                     <div
-                        class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300"
-                        >
-                        <div class="text-center text-white">
-                           <h3 class="text-2xl font-bold mb-2">Curtain Rods</h3>
-                           <p class="mb-4">30+ Styles Available</p>
-                           <button
-                              class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
-                              >
-                           View Collection
-                           </button>
-                        </div>
-                     </div>
-                  </div>
-                  <div
-                     class="category-card relative rounded-lg overflow-hidden shadow-lg group"
-                     >
-                     <img
-                        src="https://public.readdy.ai/ai/img_res/8dca3b6c82ff243045a7153d017b709a.jpg"
-                        alt="Brackets"
-                        class="w-full h-64 object-cover"
-                        />
-                     <div
-                        class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300"
-                        >
-                        <div class="text-center text-white">
-                           <h3 class="text-2xl font-bold mb-2">Brackets</h3>
-                           <p class="mb-4">25+ Styles Available</p>
-                           <button
-                              class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
-                              >
-                           View Collection
-                           </button>
-                        </div>
-                     </div>
-                  </div>
-                  <div
-                     class="category-card relative rounded-lg overflow-hidden shadow-lg group"
-                     >
-                     <img
-                        src="https://public.readdy.ai/ai/img_res/fe7f4207ce5d5adc743d652d6ed927aa.jpg"
-                        alt="Finials"
-                        class="w-full h-64 object-cover"
-                        />
-                     <div
-                        class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300"
-                        >
-                        <div class="text-center text-white">
-                           <h3 class="text-2xl font-bold mb-2">Finials</h3>
-                           <p class="mb-4">40+ Styles Available</p>
-                           <button
-                              class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
-                              >
-                           View Collection
-                           </button>
-                        </div>
-                     </div>
-                  </div>
-                  <div
-                     class="category-card relative rounded-lg overflow-hidden shadow-lg group"
-                     >
-                     <img
-                        src="https://public.readdy.ai/ai/img_res/007ff968f8dc5ff700c9cc4dd84f6497.jpg"
-                        alt="Curtain Rods"
-                        class="w-full h-64 object-cover"
-                        />
-                     <div
-                        class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300"
-                        >
-                        <div class="text-center text-white">
-                           <h3 class="text-2xl font-bold mb-2">Curtain Rods</h3>
-                           <p class="mb-4">30+ Styles Available</p>
-                           <button
-                              class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
-                              >
-                           View Collection
-                           </button>
-                        </div>
-                     </div>
-                  </div>
-                  <div
-                     class="category-card relative rounded-lg overflow-hidden shadow-lg group"
-                     >
-                     <img
-                        src="https://public.readdy.ai/ai/img_res/8dca3b6c82ff243045a7153d017b709a.jpg"
-                        alt="Brackets"
-                        class="w-full h-64 object-cover"
-                        />
-                     <div
-                        class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300"
-                        >
-                        <div class="text-center text-white">
-                           <h3 class="text-2xl font-bold mb-2">Brackets</h3>
-                           <p class="mb-4">25+ Styles Available</p>
-                           <button
-                              class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
-                              >
-                           View Collection
-                           </button>
-                        </div>
-                     </div>
-                  </div>
-                  <div
-                     class="category-card relative rounded-lg overflow-hidden shadow-lg group"
-                     >
-                     <img
-                        src="https://public.readdy.ai/ai/img_res/fe7f4207ce5d5adc743d652d6ed927aa.jpg"
-                        alt="Finials"
-                        class="w-full h-64 object-cover"
-                        />
-                     <div
-                        class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300"
-                        >
-                        <div class="text-center text-white">
-                           <h3 class="text-2xl font-bold mb-2">Finials</h3>
-                           <p class="mb-4">40+ Styles Available</p>
-                           <button
-                              class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
-                              >
-                           View Collection
-                           </button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section class="py-16">
-            <div class="container mx-auto px-4">
-               <div class="flex justify-between items-center mb-8">
-                  <h2 class="text-3xl font-bold">Best Sellers</h2>
-                  <button
-                     class="text-secondary hover:text-secondary/80 font-medium flex items-center"
-                     onclick="window.location.href='products.html'"
-                     >
-                  View All
-                  <i class="ri-arrow-right-line ml-2"></i>
-                  </button>
-               </div>
-               <div class="splide" id="bestsellers-splide">
-                  <div class="splide__track">
-                     <ul class="splide__list">
-                        <!-- Product 1 -->
-                        <li class="splide__slide">
-                           <div
-                              class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
-                              >
-                              <div class="relative">
-                                 <img
-                                    src="https://public.readdy.ai/ai/img_res/f15cf434c5d7c01801a4b1a12eca2588.jpg"
-                                    alt="Premium Adjustable Curtain Rod"
-                                    class="w-full h-64 object-cover"
-                                    />
-                                 <button
-                                    class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
-                                    >
-                                 Quick View
-                                 </button>
-                              </div>
-                              <div class="p-4">
-                                 <h3 class="font-medium mb-2">
-                                    Premium Adjustable Curtain Rod
-                                 </h3>
-                              </div>
-                           </div>
-                        </li>
-                        <!-- Product 2 -->
-                        <li class="splide__slide">
-                           <div
-                              class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
-                              >
-                              <div class="relative">
-                                 <img
-                                    src="https://public.readdy.ai/ai/img_res/e9578226d75fa16f43bc93faf93dc8c8.jpg"
-                                    alt="Modern Curtain Brackets"
-                                    class="w-full h-64 object-cover"
-                                    />
-                                 <button
-                                    class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
-                                    >
-                                 Quick View
-                                 </button>
-                              </div>
-                              <div class="p-4">
-                                 <h3 class="font-medium mb-2">Modern Curtain Brackets</h3>
-                              </div>
-                           </div>
-                        </li>
-                        <!-- Product 3 -->
-                        <li class="splide__slide">
-                           <div
-                              class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
-                              >
-                              <div class="relative">
-                                 <img
-                                    src="https://public.readdy.ai/ai/img_res/162ffd7793c698ba35da14a5a83ba5e0.jpg"
-                                    alt="Crystal Finial Set"
-                                    class="w-full h-64 object-cover"
-                                    />
-                                 <button
-                                    class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
-                                    >
-                                 Quick View
-                                 </button>
-                              </div>
-                              <div class="p-4">
-                                 <h3 class="font-medium mb-2">Crystal Finial Set</h3>
-                              </div>
-                           </div>
-                        </li>
-                        <!-- Product 4 -->
-                        <li class="splide__slide">
-                           <div
-                              class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
-                              >
-                              <div class="relative">
-                                 <img
-                                    src="https://public.readdy.ai/ai/img_res/c915d4294813f86495001591847e5d66.jpg"
-                                    alt="Decorative Curtain Holdback"
-                                    class="w-full h-64 object-cover"
-                                    />
-                                 <button
-                                    class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
-                                    >
-                                 Quick View
-                                 </button>
-                              </div>
-                              <div class="p-4">
-                                 <h3 class="font-medium mb-2">
-                                    Decorative Curtain Holdback
-                                 </h3>
-                              </div>
-                           </div>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section class="py-16">
-            <div class="container mx-auto px-4">
-               <div class="flex justify-between items-center mb-8">
-                  <h2 class="text-3xl font-bold">Best Sellers</h2>
-                  <button
-                     class="text-secondary hover:text-secondary/80 font-medium flex items-center"
-                     >
-                  View All
-                  <i class="ri-arrow-right-line ml-2"></i>
-                  </button>
-               </div>
-               <div
-                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-                  id="productGrid"
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
                   >
-                  <div
-                     class="product-card bg-white rounded-lg shadow-lg overflow-hidden"
-                     >
-                     <div class="relative">
-                        <img
-                           src="https://public.readdy.ai/ai/img_res/f15cf434c5d7c01801a4b1a12eca2588.jpg"
-                           alt="${product.name}"
-                           class="w-full h-64 object-cover"
-                           />
-                        <button
-                           class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
-                           >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp M. Track Ivory Electro Coating/Imp M. Track Ivory Electro Coating.webp"
+                        alt="Imp M. Track Ivory Electro Coating"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
                         Quick View
-                        </button>
-                     </div>
-                     <div class="p-4">
-                        <h3 class="font-medium mb-2">Premium Adjustable Curtain Rod</h3>
-                     </div>
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp M. Track Ivory Electro Coating
+                      </h3>
+                    </div>
                   </div>
+                </li>
+                <li class="splide__slide py-2">
                   <div
-                     class="product-card bg-white rounded-lg shadow-lg overflow-hidden"
-                     >
-                     <div class="relative">
-                        <img
-                           src="https://public.readdy.ai/ai/img_res/e9578226d75fa16f43bc93faf93dc8c8.jpg"
-                           alt="${product.name}"
-                           class="w-full h-64 object-cover"
-                           />
-                        <button
-                           class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
-                           >
-                        Quick View
-                        </button>
-                     </div>
-                     <div class="p-4">
-                        <h3 class="font-medium mb-2">Modern Curtain Brackets</h3>
-                     </div>
-                  </div>
-                  <div
-                     class="product-card bg-white rounded-lg shadow-lg overflow-hidden"
-                     >
-                     <div class="relative">
-                        <img
-                           src="https://public.readdy.ai/ai/img_res/162ffd7793c698ba35da14a5a83ba5e0.jpg"
-                           alt="${product.name}"
-                           class="w-full h-64 object-cover"
-                           />
-                        <button
-                           class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
-                           >
-                        Quick View
-                        </button>
-                     </div>
-                     <div class="p-4">
-                        <h3 class="font-medium mb-2">Crystal Finial Set</h3>
-                     </div>
-                  </div>
-                  <div
-                     class="product-card bg-white rounded-lg shadow-lg overflow-hidden"
-                     >
-                     <div class="relative">
-                        <img
-                           src="https://public.readdy.ai/ai/img_res/c915d4294813f86495001591847e5d66.jpg"
-                           alt="${product.name}"
-                           class="w-full h-64 object-cover"
-                           />
-                        <button
-                           class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
-                           >
-                        Quick View
-                        </button>
-                     </div>
-                     <div class="p-4">
-                        <h3 class="font-medium mb-2">Decorative Curtain Holdback</h3>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section class="py-16">
-            <div class="container mx-auto px-4">
-               <div class="flex justify-between items-center mb-8">
-                  <h2 class="text-3xl font-bold">Best Sellers</h2>
-                  <button
-                     class="text-secondary hover:text-secondary/80 font-medium flex items-center"
-                     >
-                  View All
-                  <i class="ri-arrow-right-line ml-2"></i>
-                  </button>
-               </div>
-               <div
-                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-                  id="productGrid"
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
                   >
-                  <div
-                     class="product-card bg-white rounded-lg shadow-lg overflow-hidden"
-                     >
-                     <div class="relative">
-                        <img
-                           src="https://public.readdy.ai/ai/img_res/f15cf434c5d7c01801a4b1a12eca2588.jpg"
-                           alt="${product.name}"
-                           class="w-full h-64 object-cover"
-                           />
-                        <button
-                           class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
-                           >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp M. Track Antique Electro Coating/Imp M. Track Antique Electro Coating.webp"
+                        alt="Imp M. Track Antique Electro Coating"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
                         Quick View
-                        </button>
-                     </div>
-                     <div class="p-4">
-                        <h3 class="font-medium mb-2">Premium Adjustable Curtain Rod</h3>
-                     </div>
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp M. Track Antique Electro Coating
+                      </h3>
+                    </div>
                   </div>
+                </li>
+                <li class="splide__slide py-2">
                   <div
-                     class="product-card bg-white rounded-lg shadow-lg overflow-hidden"
-                     >
-                     <div class="relative">
-                        <img
-                           src="https://public.readdy.ai/ai/img_res/e9578226d75fa16f43bc93faf93dc8c8.jpg"
-                           alt="${product.name}"
-                           class="w-full h-64 object-cover"
-                           />
-                        <button
-                           class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
-                           >
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp 1001 Track Ivory Electro Coating/Imp 1001 Track Ivory Electro Coating.webp"
+                        alt="Imp 1001 Track Ivory Electro Coating"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
                         Quick View
-                        </button>
-                     </div>
-                     <div class="p-4">
-                        <h3 class="font-medium mb-2">Modern Curtain Brackets</h3>
-                     </div>
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp 1001 Track Ivory Electro Coating
+                      </h3>
+                    </div>
                   </div>
+                </li>
+                <li class="splide__slide py-2">
                   <div
-                     class="product-card bg-white rounded-lg shadow-lg overflow-hidden"
-                     >
-                     <div class="relative">
-                        <img
-                           src="https://public.readdy.ai/ai/img_res/162ffd7793c698ba35da14a5a83ba5e0.jpg"
-                           alt="${product.name}"
-                           class="w-full h-64 object-cover"
-                           />
-                        <button
-                           class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
-                           >
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp 1001 Track Antique Electro Coating/Imp 1001 Track Antique Electro Coating.webp"
+                        alt="Imp 1001 Track Antique Electro Coating"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
                         Quick View
-                        </button>
-                     </div>
-                     <div class="p-4">
-                        <h3 class="font-medium mb-2">Crystal Finial Set</h3>
-                     </div>
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp 1001 Track Antique Electro Coating
+                      </h3>
+                    </div>
                   </div>
+                </li>
+                <li class="splide__slide py-2">
                   <div
-                     class="product-card bg-white rounded-lg shadow-lg overflow-hidden"
-                     >
-                     <div class="relative">
-                        <img
-                           src="https://public.readdy.ai/ai/img_res/c915d4294813f86495001591847e5d66.jpg"
-                           alt="${product.name}"
-                           class="w-full h-64 object-cover"
-                           />
-                        <button
-                           class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
-                           >
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp 1003 Flexible Track Ivory Electro Coating Hospital Track/Imp 1003 Flexible Track Ivory Electro Coating Hospital Track.webp"
+                        alt="Imp 1003 Flexible Track Ivory Electro Coating Hospital Track"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
                         Quick View
-                        </button>
-                     </div>
-                     <div class="p-4">
-                        <h3 class="font-medium mb-2">Decorative Curtain Holdback</h3>
-                     </div>
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp 1003 Flexible Track Ivory Electro Coating Hospital
+                        Track
+                      </h3>
+                    </div>
                   </div>
-               </div>
+                </li>
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp 1004 Flexible Track Ivory Electro Coating Hospital Track/Imp 1004 Flexible Track Ivory Electro Coating Hospital Track.webp"
+                        alt="Imp 1004 Flexible Track Ivory Electro Coating Hospital Track"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp 1004 Flexible Track Ivory Electro Coating Hospital
+                        Track
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp 1005 Flexible Track Ivory Electro Coating Hospital Track/Imp 1005 Flexible Track Ivory Electro Coating Hospital Track.webp"
+                        alt="Imp 1005 Flexible Track Ivory Electro Coating Hospital Track"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp 1005 Flexible Track Ivory Electro Coating Hospital
+                        Track
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp 1006 Track White Electro Coating/Imp 1006 Track White Electro Coating.webp"
+                        alt="Imp 1006 Track White Electro Coating"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp 1006 Track White Electro Coating
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp 1007 Rop Track White Electro Coating/Imp 1007 Rop Track White Electro Coating.webp"
+                        alt="Imp 1007 Rop Track White Electro Coating"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp 1007 Rop Track White Electro Coating
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp 1008 Track White Electro Coating/Imp 1008 Track White Electro Coating.webp"
+                        alt="Imp 1008 Track White Electro Coating"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp 1008 Track White Electro Coating
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp 1009 PVC Electro Coating White/Imp 1009 PVC Electro Coating White.webp"
+                        alt="Imp 1009 PVC Electro Coating White"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp 1009 PVC Electro Coating White
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp 1010 Track Ivory Electro Coating/Imp 1010 Track Ivory Electro Coating.webp"
+                        alt="Imp 1010 Track Ivory Electro Coating"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp 1010 Track Ivory Electro Coating
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp 1011 Track Ivory Electro Coating/Imp 1011 Track Ivory Electro Coating.webp"
+                        alt="Imp 1011 Track Ivory Electro Coating"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp 1011 Track Ivory Electro Coating
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp 1012 PVC Electro Coating White/Imp 1012 PVC Electro Coating White.webp"
+                        alt="Imp 1012 PVC Electro Coating White"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp 1012 PVC Electro Coating White
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp 1013 PVC Electro Coating White/Imp 1013 PVC Electro Coating White.webp"
+                        alt="Imp 1013 PVC Electro Coating White"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp 1013 PVC Electro Coating White
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp 1014 Electro Plating Rose Gold/Imp 1014 Electro Plating Rose Gold.webp"
+                        alt="Imp 1014 Electro Plating Rose Gold"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp 1014 Electro Plating Rose Gold
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp 1015 Roman Track White Electro Coating/Imp 1015 Roman Track White Electro Coating.webp"
+                        alt="Imp 1015 Roman Track White Electro Coating"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp 1015 Roman Track White Electro Coating
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp Venus Roman Track White Without Voice Electro Coating/Imp Venus Roman Track White Without Voice Electro Coating.webp"
+                        alt="Imp Venus Roman Track White Without Voice Electro Coating"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp Venus Roman Track White Without Voice Electro
+                        Coating
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp Three Way Manual Track White Electro Coating/Imp Three Way Manual Track White Electro Coating.webp"
+                        alt="Imp Three Way Manual Track White Electro Coating"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp Three Way Manual Track White Electro Coating
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp Three Way Rope Track White Electro Coating/Imp Three Way Rope Track White Electro Coating.webp"
+                        alt="Imp Three Way Rope Track White Electro Coating"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp Three Way Rope Track White Electro Coating
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp Four Way Manual Track White Electro Coating/Imp Four Way Manual Track White Electro Coating.webp"
+                        alt="Imp Four Way Manual Track White Electro Coating"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp Four Way Manual Track White Electro Coating
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="./images/Tracks/Imp Four Way Rope Track White Electro Coating/Imp Four Way Rope Track White Electro Coating.webp"
+                        alt="Imp Four Way Rope Track White Electro Coating"
+                        class="w-full h-60 object-contain"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Imp Four Way Rope Track White Electro Coating
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-         </section>
-         <section class="bg-primary text-white py-16">
-            <div class="container mx-auto px-4">
-               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                  <div class="flex items-center">
-                     <div class="w-12 h-12 flex items-center justify-center">
-                        <i class="ri-truck-line text-3xl"></i>
-                     </div>
-                     <div class="ml-4">
-                        <h3 class="font-bold">Free Shipping</h3>
-                        <p class="text-sm opacity-80">On orders over $99</p>
-                     </div>
-                  </div>
-                  <div class="flex items-center">
-                     <div class="w-12 h-12 flex items-center justify-center">
-                        <i class="ri-shield-check-line text-3xl"></i>
-                     </div>
-                     <div class="ml-4">
-                        <h3 class="font-bold">2 Year Warranty</h3>
-                        <p class="text-sm opacity-80">100% guarantee</p>
-                     </div>
-                  </div>
-                  <div class="flex items-center">
-                     <div class="w-12 h-12 flex items-center justify-center">
-                        <i class="ri-customer-service-2-line text-3xl"></i>
-                     </div>
-                     <div class="ml-4">
-                        <h3 class="font-bold">24/7 Support</h3>
-                        <p class="text-sm opacity-80">Dedicated support</p>
-                     </div>
-                  </div>
-                  <div class="flex items-center">
-                     <div class="w-12 h-12 flex items-center justify-center">
-                        <i class="ri-secure-payment-line text-3xl"></i>
-                     </div>
-                     <div class="ml-4">
-                        <h3 class="font-bold">Secure Payment</h3>
-                        <p class="text-sm opacity-80">100% secure payment</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section class="py-16 bg-gray-50">
-            <div class="container mx-auto px-4">
-               <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
-               <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  <div class="text-center">
-                     <div
-                        class="w-16 h-16 mx-auto mb-4 flex items-center justify-center"
-                        >
-                        <i class="ri-award-line text-4xl text-secondary"></i>
-                     </div>
-                     <h3 class="text-xl font-bold mb-2">Premium Quality</h3>
-                     <p class="text-gray-600">
-                        Our products are crafted from the finest materials to ensure
-                        lasting beauty and durability.
-                     </p>
-                  </div>
-                  <div class="text-center">
-                     <div
-                        class="w-16 h-16 mx-auto mb-4 flex items-center justify-center"
-                        >
-                        <i class="ri-palette-line text-4xl text-secondary"></i>
-                     </div>
-                     <h3 class="text-xl font-bold mb-2">Extensive Selection</h3>
-                     <p class="text-gray-600">
-                        Choose from over 200 unique designs to perfectly match your
-                        home's style.
-                     </p>
-                  </div>
-                  <div class="text-center">
-                     <div
-                        class="w-16 h-16 mx-auto mb-4 flex items-center justify-center"
-                        >
-                        <i class="ri-tools-line text-4xl text-secondary"></i>
-                     </div>
-                     <h3 class="text-xl font-bold mb-2">Easy Installation</h3>
-                     <p class="text-gray-600">
-                        Our products come with detailed instructions and all necessary
-                        hardware for hassle-free setup.
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section class="py-16 bg-gray-50">
-            <div class="container mx-auto px-4 max-w-7xl">
-               <h2 class="text-3xl font-bold text-center mb-12">
-                  What Our Customers Say
-               </h2>
-               <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <div class="bg-white p-6 rounded-lg shadow-sm">
-                     <div class="flex text-yellow-400 mb-4">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                     </div>
-                     <p class="text-gray-600 mb-4">
-                        "Excellent quality curtain rods! The installation was
-                        straightforward, and they look absolutely stunning. Highly
-                        recommend!"
-                     </p>
-                     <div class="flex items-center">
-                        <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
-                        <div>
-                           <h4 class="font-semibold">Emily Thompson</h4>
-                           <p class="text-sm text-gray-500">Interior Designer</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="bg-white p-6 rounded-lg shadow-sm">
-                     <div class="flex text-yellow-400 mb-4">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                     </div>
-                     <p class="text-gray-600 mb-4">
-                        "The crystal finials I ordered are beautiful and add such
-                        elegance to my living room. Great customer service too!"
-                     </p>
-                     <div class="flex items-center">
-                        <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
-                        <div>
-                           <h4 class="font-semibold">Michael Anderson</h4>
-                           <p class="text-sm text-gray-500">Home Owner</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="bg-white p-6 rounded-lg shadow-sm">
-                     <div class="flex text-yellow-400 mb-4">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-half-fill"></i>
-                     </div>
-                     <p class="text-gray-600 mb-4">
-                        "Fast shipping and the brackets are very sturdy. Perfect for my
-                        heavy curtains. Will definitely order again!"
-                     </p>
-                     <div class="flex items-center">
-                        <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
-                        <div>
-                           <h4 class="font-semibold">Sarah Williams</h4>
-                           <p class="text-sm text-gray-500">Decorator</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section class="bg-gray-50 py-20">
-            <div class="max-w-7xl mx-auto px-4">
-               <div class="bg-white rounded-lg shadow-sm p-6 md:p-12">
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                     <div>
-                        <h2 class="text-3xl font-bold mb-6">Get Expert Advice</h2>
-                        <p class="text-gray-600 mb-8">
-                           Subscribe to our newsletter for the latest trends, tips, and
-                           exclusive offers.
-                        </p>
-                        <form class="flex flex-col sm:flex-row gap-4">
-                           <input
-                              type="email"
-                              placeholder="Enter your email"
-                              class="w-full sm:flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/50"
-                              />
-                           <button
-                              type="submit"
-                              class="bg-primary text-white w-full sm:w-auto px-6 py-3 rounded-lg whitespace-nowrap hover:bg-primary/90 transition-colors"
-                              >
-                           Subscribe
-                           </button>
-                        </form>
-                     </div>
-                     <div class="hidden md:block">
-                        <img
-                           src="https://public.readdy.ai/ai/img_res/5e6553774e8efe53b3e934cc4a0897e2.jpg"
-                           alt="Expert Advice"
-                           class="w-full rounded-lg object-cover"
-                           />
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section
-            class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 p-5"
+          </div>
+        </div>
+      </section>
+      <section class="py-16">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center mb-8">
+            <h2 class="text-3xl font-bold">Hooks</h2>
+            <button
+              class="text-secondary hover:text-secondary/80 font-medium flex items-center"
+              onclick="window.location.href='products.html'"
             >
-            <div
-               class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden"
-               >
-               <div class="absolute top-5 left-5 w-3/5">
-                  <h2 class="text-xl font-semibold text-gray-800">
-                     Б/у запчасти для грузовых
-                  </h2>
-                  <p class="text-gray-700 text-sm">
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
-                     in et, lectus sit lorem id integer.
-                  </p>
-               </div>
-               <div class="absolute bottom-0 right-0 w-2/5">
-                  <img
-                     src="./images/Motor/KC52/KC52.jpeg"
-                     alt="Автозапчасти"
-                     class="max-w-40 mix-blend-multiply"
-                     />
-               </div>
-            </div>
-            <div
-               class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden"
-               >
-               <div class="absolute top-5 left-5 w-3/5">
-                  <h2 class="text-xl font-semibold text-gray-800">
-                     Автомойка грузовых для грузовых
-                  </h2>
-                  <p class="text-gray-700 text-sm">
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
-                     in et, lectus sit lorem id integer.
-                  </p>
-               </div>
-               <div class="absolute bottom-0 right-0 w-2/5">
-                  <img
-                     src="./images/1013/1013.jpeg"
-                     alt="Мойка авто"
-                     class="max-w-40 mix-blend-multiply"
-                     />
-               </div>
-            </div>
-            <div
-               class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden"
-               >
-               <div class="absolute top-5 left-5 w-3/5">
-                  <h2 class="text-xl font-semibold text-gray-800">
-                     Магазин аксессуаров для грузовых
-                  </h2>
-                  <p class="text-gray-700 text-sm">
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
-                     in et, lectus sit lorem id integer.
-                  </p>
-               </div>
-               <div class="absolute bottom-0 right-0 w-2/5">
-                  <img
-                     src="./images/1005/1005.jpeg"
-                     alt="Аксессуары"
-                     class="max-w-40 mix-blend-multiply"
-                     />
-               </div>
-            </div>
-            <div
-               class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden"
-               >
-               <div class="absolute top-5 left-5 w-3/5">
-                  <h2 class="text-xl font-semibold text-gray-800">
-                     Пункт замены масла
-                  </h2>
-                  <p class="text-gray-700 text-sm">
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
-                     in et, lectus sit lorem id integer.
-                  </p>
-               </div>
-               <div class="absolute bottom-0 right-0 w-2/5">
-                  <img
-                     src="./images/4 WAY/4way.jpeg"
-                     alt="Замена масла"
-                     class="max-w-40 mix-blend-multiply"
-                     />
-               </div>
-            </div>
-         </section>
-      </main>
-      <footer class="bg-primary text-white py-16">
-         <div class="max-w-7xl mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-               <div>
-                  <a href="#" class="flex-shrink-0 items-center justify-center">
-                  <img
-                     src="./icons/kohinoor-logo.png"
-                     alt="Kohinoor Logo"
-                     class="w-28"
-                     />
-                  </a>
-                  <p class="text-gray-400 mb-6">
-                     Transform your windows with our premium curtain accessories.
-                  </p>
-                  <div class="flex space-x-4">
-                     <a
-                        href="#"
-                        class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
-                        >
-                     <i class="ri-facebook-fill"></i>
-                     </a>
-                     <a
-                        href="#"
-                        class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
-                        >
-                     <i class="ri-instagram-line"></i>
-                     </a>
-                     <a
-                        href="#"
-                        class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
-                        >
-                     <i class="ri-pinterest-line"></i>
-                     </a>
+              View All
+              <i class="ri-arrow-right-line ml-2"></i>
+            </button>
+          </div>
+          <div class="splide" id="Hooks">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <!-- Product 1 -->
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://public.readdy.ai/ai/img_res/f15cf434c5d7c01801a4b1a12eca2588.jpg"
+                        alt="Premium Adjustable Curtain Rod"
+                        class="w-full h-60 object-cover"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Premium Adjustable Curtain Rod
+                      </h3>
+                    </div>
                   </div>
-               </div>
-               <div>
-                  <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
-                  <ul class="space-y-4">
-                     <li>
-                        <a href="#" class="text-gray-400 hover:text-white">About Us</a>
-                     </li>
-                     <li>
-                        <a href="#" class="text-gray-400 hover:text-white">Contact</a>
-                     </li>
-                     <li>
-                        <a href="#" class="text-gray-400 hover:text-white">Blog</a>
-                     </li>
-                     <li>
-                        <a href="#" class="text-gray-400 hover:text-white">FAQs</a>
-                     </li>
-                  </ul>
-               </div>
-               <div>
-                  <h3 class="text-lg font-semibold mb-6">Customer Service</h3>
-                  <ul class="space-y-4">
-                     <li>
-                        <a href="#" class="text-gray-400 hover:text-white"
-                           >Shipping Policy</a
-                           >
-                     </li>
-                     <li>
-                        <a href="#" class="text-gray-400 hover:text-white"
-                           >Returns & Exchanges</a
-                           >
-                     </li>
-                     <li>
-                        <a href="#" class="text-gray-400 hover:text-white"
-                           >Track Order</a
-                           >
-                     </li>
-                     <li>
-                        <a href="#" class="text-gray-400 hover:text-white"
-                           >Privacy Policy</a
-                           >
-                     </li>
-                  </ul>
-               </div>
-               <div>
-                  <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
-                  <ul class="space-y-4">
-                     <li class="flex items-center text-gray-400">
-                        <i class="ri-map-pin-line mr-3"></i>
-                        <span>123 Design Street, New York, NY 10001</span>
-                     </li>
-                     <li class="flex items-center text-gray-400">
-                        <i class="ri-phone-line mr-3"></i>
-                        <span>+1 (555) 123-4567</span>
-                     </li>
-                     <li class="flex items-center text-gray-400">
-                        <i class="ri-mail-line mr-3"></i>
-                        <span>support@curtainpro.com</span>
-                     </li>
-                  </ul>
-               </div>
+                </li>
+                <!-- Product 2 -->
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://public.readdy.ai/ai/img_res/e9578226d75fa16f43bc93faf93dc8c8.jpg"
+                        alt="Modern Curtain Brackets"
+                        class="w-full h-60 object-cover"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">Modern Curtain Brackets</h3>
+                    </div>
+                  </div>
+                </li>
+                <!-- Product 3 -->
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://public.readdy.ai/ai/img_res/162ffd7793c698ba35da14a5a83ba5e0.jpg"
+                        alt="Crystal Finial Set"
+                        class="w-full h-60 object-cover"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">Crystal Finial Set</h3>
+                    </div>
+                  </div>
+                </li>
+                <!-- Product 4 -->
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://public.readdy.ai/ai/img_res/c915d4294813f86495001591847e5d66.jpg"
+                        alt="Decorative Curtain Holdback"
+                        class="w-full h-60 object-cover"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">Decorative Curtain Holdback</h3>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="border-t border-gray-800 mt-12 pt-8">
-               <div class="flex flex-wrap justify-between items-center">
-                  <p class="text-gray-400">
-                     &copy; 2025 Kohinoor All rights reserved.
-                  </p>
-               </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-16">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center mb-8">
+            <h2 class="text-3xl font-bold">Pipes</h2>
+            <button
+              class="text-secondary hover:text-secondary/80 font-medium flex items-center"
+              onclick="window.location.href='products.html'"
+            >
+              View All
+              <i class="ri-arrow-right-line ml-2"></i>
+            </button>
+          </div>
+          <div class="splide" id="Pipes">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <!-- Product 1 -->
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://public.readdy.ai/ai/img_res/f15cf434c5d7c01801a4b1a12eca2588.jpg"
+                        alt="Premium Adjustable Curtain Rod"
+                        class="w-full h-60 object-cover"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Premium Adjustable Curtain Rod
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+                <!-- Product 2 -->
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://public.readdy.ai/ai/img_res/e9578226d75fa16f43bc93faf93dc8c8.jpg"
+                        alt="Modern Curtain Brackets"
+                        class="w-full h-60 object-cover"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">Modern Curtain Brackets</h3>
+                    </div>
+                  </div>
+                </li>
+                <!-- Product 3 -->
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://public.readdy.ai/ai/img_res/162ffd7793c698ba35da14a5a83ba5e0.jpg"
+                        alt="Crystal Finial Set"
+                        class="w-full h-60 object-cover"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">Crystal Finial Set</h3>
+                    </div>
+                  </div>
+                </li>
+                <!-- Product 4 -->
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://public.readdy.ai/ai/img_res/c915d4294813f86495001591847e5d66.jpg"
+                        alt="Decorative Curtain Holdback"
+                        class="w-full h-60 object-cover"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">Decorative Curtain Holdback</h3>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-         </div>
-      </footer>
-      <script>
-         document.addEventListener("DOMContentLoaded", function () {
-           new Splide("#bestsellers-splide", {
-             type: "loop",
-             perPage: 4,
-             gap: "1rem",
-             arrows: false,
-             pagination: false,
-             pauseOnHover: true, // Optional: pause autoplay on hover
-             breakpoints: {
-               1024: {
-                 perPage: 3,
-               },
-               768: {
-                 perPage: 2,
-               },
-               640: {
-                 perPage: 1,
-               },
-             },
-           }).mount(window.splide.Extensions);
-         
-           // Optional: Add hover effect for quick view buttons
-           document.querySelectorAll(".product-card").forEach((card) => {
-             card.addEventListener("mouseenter", () => {
-               card.querySelector(".quick-view").style.opacity = "1";
-             });
-             card.addEventListener("mouseleave", () => {
-               card.querySelector(".quick-view").style.opacity = "0";
-             });
-           });
-         });
-         
-         const hamburger = document.getElementById("hamburger");
-         const mobileMenu = document.getElementById("mobile-menu");
-         
-         hamburger.addEventListener("click", () => {
-           mobileMenu.classList.toggle("hidden");
-         });
-      </script>
-   </body>
+          </div>
+        </div>
+      </section>
+      <section class="py-16">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center mb-8">
+            <h2 class="text-3xl font-bold">Tassles</h2>
+            <button
+              class="text-secondary hover:text-secondary/80 font-medium flex items-center"
+              onclick="window.location.href='products.html'"
+            >
+              View All
+              <i class="ri-arrow-right-line ml-2"></i>
+            </button>
+          </div>
+          <div class="splide" id="Tassles">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <!-- Product 1 -->
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://public.readdy.ai/ai/img_res/f15cf434c5d7c01801a4b1a12eca2588.jpg"
+                        alt="Premium Adjustable Curtain Rod"
+                        class="w-full h-60 object-cover"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">
+                        Premium Adjustable Curtain Rod
+                      </h3>
+                    </div>
+                  </div>
+                </li>
+                <!-- Product 2 -->
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://public.readdy.ai/ai/img_res/e9578226d75fa16f43bc93faf93dc8c8.jpg"
+                        alt="Modern Curtain Brackets"
+                        class="w-full h-60 object-cover"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">Modern Curtain Brackets</h3>
+                    </div>
+                  </div>
+                </li>
+                <!-- Product 3 -->
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://public.readdy.ai/ai/img_res/162ffd7793c698ba35da14a5a83ba5e0.jpg"
+                        alt="Crystal Finial Set"
+                        class="w-full h-60 object-cover"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">Crystal Finial Set</h3>
+                    </div>
+                  </div>
+                </li>
+                <!-- Product 4 -->
+                <li class="splide__slide py-2">
+                  <div
+                    class="product-card bg-white rounded-lg shadow-lg overflow-hidden mx-2"
+                  >
+                    <div class="relative">
+                      <img
+                        src="https://public.readdy.ai/ai/img_res/c915d4294813f86495001591847e5d66.jpg"
+                        alt="Decorative Curtain Holdback"
+                        class="w-full h-60 object-cover"
+                      />
+                      <button
+                        class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
+                      >
+                        Quick View
+                      </button>
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium">Decorative Curtain Holdback</h3>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary text-white py-16">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="flex items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-truck-line text-3xl"></i>
+              </div>
+              <div class="ml-4">
+                <h3 class="font-bold">Free Shipping</h3>
+                <p class="text-sm opacity-80">On orders over $99</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-shield-check-line text-3xl"></i>
+              </div>
+              <div class="ml-4">
+                <h3 class="font-bold">2 Year Warranty</h3>
+                <p class="text-sm opacity-80">100% guarantee</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-customer-service-2-line text-3xl"></i>
+              </div>
+              <div class="ml-4">
+                <h3 class="font-bold">24/7 Support</h3>
+                <p class="text-sm opacity-80">Dedicated support</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-secure-payment-line text-3xl"></i>
+              </div>
+              <div class="ml-4">
+                <h3 class="font-bold">Secure Payment</h3>
+                <p class="text-sm opacity-80">100% secure payment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+              <div
+                class="w-16 h-16 mx-auto mb-4 flex items-center justify-center"
+              >
+                <i class="ri-award-line text-4xl text-secondary"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Premium Quality</h3>
+              <p class="text-gray-600">
+                Our products are crafted from the finest materials to ensure
+                lasting beauty and durability.
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="w-16 h-16 mx-auto mb-4 flex items-center justify-center"
+              >
+                <i class="ri-palette-line text-4xl text-secondary"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Extensive Selection</h3>
+              <p class="text-gray-600">
+                Choose from over 200 unique designs to perfectly match your
+                home's style.
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="w-16 h-16 mx-auto mb-4 flex items-center justify-center"
+              >
+                <i class="ri-tools-line text-4xl text-secondary"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Easy Installation</h3>
+              <p class="text-gray-600">
+                Our products come with detailed instructions and all necessary
+                hardware for hassle-free setup.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-7xl">
+          <h2 class="text-3xl font-bold text-center mb-12">
+            What Our Customers Say
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <div class="flex text-yellow-400 mb-4">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p class="text-gray-600 mb-4">
+                "Excellent quality curtain rods! The installation was
+                straightforward, and they look absolutely stunning. Highly
+                recommend!"
+              </p>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                <div>
+                  <h4 class="font-semibold">Emily Thompson</h4>
+                  <p class="text-sm text-gray-500">Interior Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <div class="flex text-yellow-400 mb-4">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p class="text-gray-600 mb-4">
+                "The crystal finials I ordered are beautiful and add such
+                elegance to my living room. Great customer service too!"
+              </p>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                <div>
+                  <h4 class="font-semibold">Michael Anderson</h4>
+                  <p class="text-sm text-gray-500">Home Owner</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <div class="flex text-yellow-400 mb-4">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+              </div>
+              <p class="text-gray-600 mb-4">
+                "Fast shipping and the brackets are very sturdy. Perfect for my
+                heavy curtains. Will definitely order again!"
+              </p>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                <div>
+                  <h4 class="font-semibold">Sarah Williams</h4>
+                  <p class="text-sm text-gray-500">Decorator</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="bg-white rounded-lg shadow-sm p-6 md:p-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h2 class="text-3xl font-bold mb-6">Get Expert Advice</h2>
+                <p class="text-gray-600 mb-8">
+                  Subscribe to our newsletter for the latest trends, tips, and
+                  exclusive offers.
+                </p>
+                <form class="flex flex-col sm:flex-row gap-4">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    class="w-full sm:flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  />
+                  <button
+                    type="submit"
+                    class="bg-primary text-white w-full sm:w-auto px-6 py-3 rounded-lg whitespace-nowrap hover:bg-primary/90 transition-colors"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+              <div class="hidden md:block">
+                <img
+                  src="https://public.readdy.ai/ai/img_res/5e6553774e8efe53b3e934cc4a0897e2.jpg"
+                  alt="Expert Advice"
+                  class="w-full rounded-lg object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 p-5"
+      >
+        <div
+          class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden"
+        >
+          <div class="absolute top-5 left-5 w-3/5">
+            <h2 class="text-xl font-semibold text-gray-800">
+              Б/у запчасти для грузовых
+            </h2>
+            <p class="text-gray-700 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
+              in et, lectus sit lorem id integer.
+            </p>
+          </div>
+          <div class="absolute bottom-0 right-0 w-2/5">
+            <img
+              src="./images/Motor/KC52/KC52.jpeg"
+              alt="Автозапчасти"
+              class="max-w-40 mix-blend-multiply"
+            />
+          </div>
+        </div>
+        <div
+          class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden"
+        >
+          <div class="absolute top-5 left-5 w-3/5">
+            <h2 class="text-xl font-semibold text-gray-800">
+              Автомойка грузовых для грузовых
+            </h2>
+            <p class="text-gray-700 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
+              in et, lectus sit lorem id integer.
+            </p>
+          </div>
+          <div class="absolute bottom-0 right-0 w-2/5">
+            <img
+              src="./images/1013/1013.jpeg"
+              alt="Мойка авто"
+              class="max-w-40 mix-blend-multiply"
+            />
+          </div>
+        </div>
+        <div
+          class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden"
+        >
+          <div class="absolute top-5 left-5 w-3/5">
+            <h2 class="text-xl font-semibold text-gray-800">
+              Магазин аксессуаров для грузовых
+            </h2>
+            <p class="text-gray-700 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
+              in et, lectus sit lorem id integer.
+            </p>
+          </div>
+          <div class="absolute bottom-0 right-0 w-2/5">
+            <img
+              src="./images/1005/1005.jpeg"
+              alt="Аксессуары"
+              class="max-w-40 mix-blend-multiply"
+            />
+          </div>
+        </div>
+        <div
+          class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden"
+        >
+          <div class="absolute top-5 left-5 w-3/5">
+            <h2 class="text-xl font-semibold text-gray-800">
+              Пункт замены масла
+            </h2>
+            <p class="text-gray-700 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
+              in et, lectus sit lorem id integer.
+            </p>
+          </div>
+          <div class="absolute bottom-0 right-0 w-2/5">
+            <img
+              src="./images/4 WAY/4way.jpeg"
+              alt="Замена масла"
+              class="max-w-40 mix-blend-multiply"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-primary text-white py-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div>
+            <a href="#" class="flex-shrink-0 items-center justify-center">
+              <img
+                src="./icons/kohinoor-logo.png"
+                alt="Kohinoor Logo"
+                class="w-40"
+              />
+            </a>
+            <p class="text-gray-400 mb-6">
+              Transform your windows with our premium curtain accessories.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+              >
+                <i class="ri-pinterest-line"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Contact</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">FAQs</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Customer Service</h3>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Shipping Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Returns & Exchanges</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Track Order</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
+            <ul class="space-y-4">
+              <li class="flex items-center text-gray-400">
+                <i class="ri-map-pin-line mr-3"></i>
+                <span>123 Design Street, New York, NY 10001</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="ri-phone-line mr-3"></i>
+                <span>+1 (555) 123-4567</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="ri-mail-line mr-3"></i>
+                <span>support@curtainpro.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8">
+          <div class="flex flex-wrap justify-between items-center">
+            <p class="text-gray-400">
+              &copy; 2025 Kohinoor All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#Tracks", {
+          type: "loop",
+          perPage: 4,
+          gap: "1rem",
+          arrows: false,
+          pagination: false,
+          pauseOnHover: true, // Optional: pause autoplay on hover
+          breakpoints: {
+            1024: {
+              perPage: 3,
+            },
+            768: {
+              perPage: 2,
+            },
+            640: {
+              perPage: 1,
+            },
+          },
+        }).mount(window.splide.Extensions);
+
+        new Splide("#Hooks", {
+          type: "loop",
+          perPage: 4,
+          gap: "1rem",
+          arrows: false,
+          pagination: false,
+          pauseOnHover: true, // Optional: pause autoplay on hover
+          breakpoints: {
+            1024: {
+              perPage: 3,
+            },
+            768: {
+              perPage: 2,
+            },
+            640: {
+              perPage: 1,
+            },
+          },
+        }).mount(window.splide.Extensions);
+
+        new Splide("#Pipes", {
+          type: "loop",
+          perPage: 4,
+          gap: "1rem",
+          arrows: false,
+          pagination: false,
+          pauseOnHover: true, // Optional: pause autoplay on hover
+          breakpoints: {
+            1024: {
+              perPage: 3,
+            },
+            768: {
+              perPage: 2,
+            },
+            640: {
+              perPage: 1,
+            },
+          },
+        }).mount(window.splide.Extensions);
+
+        new Splide("#Tassles", {
+          type: "loop",
+          perPage: 4,
+          gap: "1rem",
+          arrows: false,
+          pagination: false,
+          pauseOnHover: true, // Optional: pause autoplay on hover
+          breakpoints: {
+            1024: {
+              perPage: 3,
+            },
+            768: {
+              perPage: 2,
+            },
+            640: {
+              perPage: 1,
+            },
+          },
+        }).mount(window.splide.Extensions);
+
+        // Optional: Add hover effect for quick view buttons
+        document.querySelectorAll(".product-card").forEach((card) => {
+          card.addEventListener("mouseenter", () => {
+            card.querySelector(".quick-view").style.opacity = "1";
+          });
+          card.addEventListener("mouseleave", () => {
+            card.querySelector(".quick-view").style.opacity = "0";
+          });
+        });
+      });
+
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
 </html>
