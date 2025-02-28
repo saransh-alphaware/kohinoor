@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kohinoor - Curtain Accessories & Track Manufacturer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2C3E50",
+              secondary: "#E67E22",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white min-h-screen font-poppins">
+    <!-- Header -->
+    <header class="fixed w-full z-50">
+      <nav
+        class="bg-primary mx-auto w-[98%] rounded-lg mt-2 px-6 py-4 shadow-lg flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <a href="#" class="flex-shrink-0">
+          <img
+            src="./icons/kohinoor-logo.png"
+            alt="Kohinoor Logo"
+            class="w-28"
+          />
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex items-center space-x-8">
+          <li>
+            <a
+              href="index.html"
+              class="text-white font-semibold hover:text-blue-400 transition"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#about-us"
+              class="text-white font-semibold hover:text-blue-400 transition"
+            >
+              About Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="#products"
+              class="text-white font-semibold hover:text-blue-400 transition"
+            >
+              Products
+            </a>
+          </li>
+          <li>
+            <a
+              href="#catalog"
+              class="text-white font-semibold hover:text-blue-400 transition"
+            >
+              Catalog
+            </a>
+          </li>
+        </ul>
+
+        <!-- Contact Button -->
+        <button
+          class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-600 transition"
+        >
+          Contact Us
+        </button>
+
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger" class="md:hidden text-white text-2xl">
+          <i class="ri-menu-line"></i>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden flex flex-col py-2 bg-primary text-white pl-4 space-y-4 rounded-b-lg mx-auto w-[98%]"
+      >
+        <a href="index.html" class="block hover:text-blue-400 transition"
+          >Home</a
+        >
+        <a href="#about-us" class="block hover:text-blue-400 transition"
+          >About Us</a
+        >
+        <a href="#products" class="block hover:text-blue-400 transition"
+          >Products</a
+        >
+        <a href="#catalog" class="block hover:text-blue-400 transition"
+          >Catalog</a
+        >
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 pt-32 pb-16">
+      <!-- Hero Section -->
+      <section
+        class="flex flex-col md:flex-row items-center gap-6 md:gap-8 lg:gap-12 mb-16"
+      >
+        <div class="w-full md:w-2/3">
+          <h1
+            class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4"
+          >
+            Tassles
+          </h1>
+        </div>
+      </section>
+
+      <!-- Products Section -->
+      <section class="mb-16">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
+        >
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/Tassles/Tassles0.webp"
+              alt="Tassles 0"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                Tassles 1
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/Tassles/Tassles1.webp"
+              alt="Tassles 1"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                Tassles 2
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/Tassles/Tassles2.webp"
+              alt="Tassles 2"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                Tassles 3
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/Tassles/Tassles3.webp"
+              alt="Tassles 3"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                Tassles 4
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/Tassles/Tassles4.webp"
+              alt="Tassles 4"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                Tassles 5
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/Tassles/Tassles5.webp"
+              alt="Tassles 5"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                Tassles 6
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/Tassles/Tassles6.webp"
+              alt="Tassles 6"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                Tassles 7
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/Tassles/Tassles7.webp"
+              alt="Tassles 7"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                Tassles 8
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/Tassles/Tassles8.webp"
+              alt="Tassles 8"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                Tassles 9
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/Tassles/Tassles9.webp"
+              alt="Tassles 9"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                Tassles 10
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/Tassles/Tassles10.webp"
+              alt="Tassles 10"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                Tassles 11
+              </h3>
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 rounded-lg p-4 transition duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
+            <img
+              src="./images/Tassles/Tassles11.webp"
+              alt="Tassles 11"
+              class="w-full h-48 object-contain mb-4"
+            />
+            <div>
+              <h3
+                class="text-sm md:text-base font-medium text-gray-800 mb-2 min-h-[40px]"
+              >
+                Tassles 12
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <!-- Brand column -->
+          <div>
+            <a href="#" class="block mb-6">
+              <img
+                src="./icons/kohinoor-logo.png"
+                alt="Kohinoor Logo"
+                class="w-40"
+              />
+            </a>
+            <p class="text-gray-400 mb-6">
+              Transform your windows with our premium curtain accessories.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition"
+              >
+                <i class="ri-pinterest-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >FAQs</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Customer Service -->
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Customer Service</h3>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Shipping Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Returns & Exchanges</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Track Order</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
+            <ul class="space-y-4">
+              <li class="flex items-center text-gray-400">
+                <i class="ri-map-pin-line mr-3"></i>
+                <span>123 Design Street, New York, NY 10001</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="ri-phone-line mr-3"></i>
+                <span>+1 (555) 123-4567</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="ri-mail-line mr-3"></i>
+                <span>support@curtainpro.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-800 mt-12 pt-8">
+          <div class="flex flex-wrap justify-between items-center">
+            <p class="text-gray-400">
+              &copy; 2025 Kohinoor All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating contact buttons -->
+    <a
+      href="https://wa.me/your-number"
+      class="fixed bottom-5 right-5 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform duration-200"
+      target="_blank"
+    >
+      <i class="ri-whatsapp-line"></i>
+    </a>
+
+    <a
+      href="tel:+your-number"
+      class="fixed bottom-5 left-5 w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform duration-200"
+    >
+      <i class="ri-phone-line"></i>
+    </a>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
