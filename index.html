@@ -2493,9 +2493,16 @@
 
     const hamburger = document.getElementById("hamburger");
     const mobileMenu = document.getElementById("mobile-menu");
+    const menuItems = mobileMenu.querySelectorAll("a"); // Select all menu links
 
     hamburger.addEventListener("click", () => {
       mobileMenu.classList.toggle("hidden");
+    });
+
+    menuItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
     });
   </script>
 </body>
