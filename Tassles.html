@@ -33,10 +33,10 @@
   </head>
   <body class="bg-white min-h-screen font-poppins">
     <!-- Header -->
-    <header class="fixed w-full z-50">
-      <nav
-        class="bg-primary mx-auto w-[98%] rounded-lg mt-2 px-6 py-4 shadow-lg flex items-center justify-between"
-      >
+    <header
+      class="fixed w-[98%] justify-between mt-2 left-1/2 -translate-x-1/2 bg-primary backdrop-blur-md shadow-lg z-50 rounded-lg"
+    >
+      <nav class="w-full flex items-center justify-between px-6 py-4">
         <!-- Logo -->
         <a href="#" class="flex-shrink-0">
           <img
@@ -99,7 +99,7 @@
       <!-- Mobile Menu -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden flex flex-col py-2 bg-primary text-white pl-4 space-y-4 rounded-b-lg mx-auto w-[98%]"
+        class="hidden md:hidden flex flex-col py-2 bg-primary text-white pl-4 space-y-4 rounded-bl-lg rounded-br-lg"
       >
         <a href="index.html" class="block hover:text-blue-400 transition"
           >Home</a

@@ -100,6 +100,20 @@
               >Catalog</a
             >
           </li>
+          <li>
+            <a
+              href="#services"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#review"
+              class="text-white font-semibold hover:text-blue-400 transition"
+              >Review</a
+            >
+          </li>
         </ul>
         <!-- Contact Button -->
         <a
@@ -128,10 +142,17 @@
         <a href="#catalog" class="block hover:text-blue-400 transition"
           >Catalog</a
         >
+        <a href="#services" class="block hover:text-blue-400 transition"
+          >Services</a
+        >
+        <a href="#review" class="block hover:text-blue-400 transition"
+          >Review</a
+        >
       </div>
     </header>
     <main>
       <section
+        id="home"
         class="relative h-[600px] bg-cover bg-center"
         style="background-image: url('./images/home Page/home.jpeg')"
       >
@@ -302,7 +323,7 @@
           </div>
         </div>
       </section>
-      <section class="py-16">
+      <section id="products" class="py-16">
         <div class="container mx-auto px-4">
           <div class="flex justify-between items-center mb-8">
             <h2 class="text-3xl font-bold">Tracks</h2>
@@ -2743,7 +2764,7 @@
         </div>
       </section>
 
-      <section class="bg-primary text-white py-16">
+      <section id="services" class="bg-primary text-white py-16">
         <div class="container mx-auto px-4">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="flex items-center">
@@ -2828,7 +2849,7 @@
           </div>
         </div>
       </section>
-      <section class="py-16 bg-gray-50">
+      <section id="review" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4 max-w-7xl">
           <h2 class="text-3xl font-bold text-center mb-12">
             What Our Customers Say
@@ -3186,6 +3207,38 @@
       <i class="ri-phone-line"></i>
     </a>
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get all links with hash
+        const links = document.querySelectorAll('a[href^="#"]');
+
+        // Add smooth scroll to all links
+        links.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            // Prevent default anchor click behavior
+            e.preventDefault();
+
+            // Get the target element
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+              // Calculate header height to offset the scroll position
+              const headerHeight =
+                document.querySelector("header").offsetHeight;
+
+              // Get position of the target
+              const targetPosition =
+                targetElement.getBoundingClientRect().top + window.pageYOffset;
+
+              // Scroll smoothly to target with header offset
+              window.scrollTo({
+                top: targetPosition - headerHeight,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
       document.addEventListener("DOMContentLoaded", function () {
         new Splide("#Tracks", {
           type: "loop",
