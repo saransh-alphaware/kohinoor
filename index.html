@@ -81,7 +81,7 @@
           </li>
           <li>
             <a
-              href="#about-us"
+              href="about.html"
               class="text-white font-semibold hover:text-blue-400 transition"
               >About Us</a
             >
@@ -133,7 +133,7 @@
         class="hidden md:hidden flex flex-col py-2 bg-primary text-white pl-4 space-y-4 rounded-bl-lg rounded-br-lg"
       >
         <a href="#home" class="block hover:text-blue-400 transition">Home</a>
-        <a href="#about-us" class="block hover:text-blue-400 transition"
+        <a href="about.html" class="block hover:text-blue-400 transition"
           >About Us</a
         >
         <a href="#products" class="block hover:text-blue-400 transition"
@@ -221,7 +221,7 @@
                   <p class="mb-4">25+ Styles Available</p>
                   <a
                     class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
-                    href="TicBack.html"
+                    href="TieBack.html"
                   >
                     View Collection
                   </a>
@@ -350,7 +350,7 @@
                       />
                       <a
                         class="quick-view absolute inset-0 bg-black/50 flex items-center justify-center text-white opacity-0 transition-opacity duration-300"
-                        href="products.html"
+                        href="./Tracks/imp-m-track-ivory-electro-coating.html"
                       >
                         Quick View
                       </a>
@@ -859,7 +859,7 @@
           <div class="flex justify-between items-center mb-8">
             <h2 class="text-3xl font-bold">TIE BACK</h2>
             <a
-              href="TicBack.html"
+              href="TieBack.html"
               class="text-secondary hover:text-secondary/80 font-medium flex items-center"
             >
               View All
@@ -2764,6 +2764,19 @@
         </div>
       </section>
 
+      <section id="catalog" class="text-white py-10">
+        <div class="container mx-auto px-4 text-center">
+          <a
+            href="./pdf/Kohinoor Catalog 2020-2021.pdf"
+            download="Kohinoor Catalog 2020-2021.pdf"
+            class="bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition"
+          >
+            <i class="ri-download-line"></i>
+            Download Catalog
+          </a>
+        </div>
+      </section>
+
       <section id="services" class="bg-primary text-white py-16">
         <div class="container mx-auto px-4">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -3169,7 +3182,11 @@
             <ul class="space-y-4">
               <li class="flex items-center text-gray-400">
                 <i class="ri-map-pin-line mr-3"></i>
-                <span>123 Design Street, New York, NY 10001</span>
+                <span
+                  >1st Floor Gala No. 108/109/111, Saraf Uday Bhawan, Chincholi
+                  Phatak Gate, Chincholi-Malad (West), Mumbai 400 064,
+                  India.</span
+                >
               </li>
               <li class="flex items-center text-gray-400">
                 <i class="ri-phone-line mr-3"></i>
@@ -3225,7 +3242,7 @@
             if (targetElement) {
               // Calculate header height to offset the scroll position
               const headerHeight =
-                document.querySelector("header").offsetHeight;
+                document.querySelector("header").offsetHeight + 16;
 
               // Get position of the target
               const targetPosition =
