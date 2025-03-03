@@ -105,26 +105,50 @@
     </div>
   </header>
   <main>
-    <section id="home" class="relative h-[600px] bg-cover bg-center"
-      style="background-image: url('./images/home Page/home.jpeg')">
-      <div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
-      <div class="container mx-auto px-4 h-full flex items-center">
-        <div class="max-w-xl text-white relative">
-          <h1 class="text-5xl font-bold mb-6">
+    <section id="home" class="relative">
+      <!-- Background Slider -->
+      <div id="background-slider" class="splide absolute inset-0">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide h-[600px] bg-cover bg-center"
+              style="background-image: url('./images/home Page/home.jpeg');"></li>
+            <li class="splide__slide h-[600px] bg-cover bg-center"
+              style="background-image: url('./images/about.jpeg');"></li>
+            <li class="splide__slide h-[600px] bg-cover bg-center"
+              style="background-image: url('./images/about1.jpeg');"></li>
+            <li class="splide__slide h-[600px] bg-cover bg-center"
+              style="background-image: url('./images/about2.jpeg');"></li>
+            <li class="splide__slide h-[600px] bg-cover bg-center"
+              style="background-image: url('./images/about3.jpeg');"></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Gradient Overlay -->
+      <div class="absolute inset-0 h-[600px] bg-gradient-to-r from-primary/80 to-transparent">
+      </div>
+
+      <!-- Content -->
+      <div class="container mx-auto px-6 h-[600px] flex items-center relative">
+        <div class="max-w-xl text-white">
+          <h1 class="text-5xl md:text-4xl sm:text-3xl font-bold mb-6">
             Transform Your Windows into Masterpieces
           </h1>
-          <p class="text-xl mb-8">
-            Discover our premium collection of curtain accessories that blend
-            style with functionality. Elevate your home décor with our
-            carefully curated selection.
+          <p class="text-xl md:text-lg sm:text-base mb-8">
+            Discover our premium collection of curtain accessories that blend style
+            with functionality. Elevate your home décor with our carefully curated
+            selection.
           </p>
-          <a class="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-button text-lg font-medium whitespace-nowrap"
+          <a class="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-lg text-lg md:text-base font-medium whitespace-nowrap"
             href="Tracks.html">
             Shop Now
           </a>
         </div>
       </div>
     </section>
+
+
+
     <section class="py-16 bg-gray-50">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12">Shop by Category</h2>
@@ -2135,6 +2159,37 @@
         </div>
       </div>
     </section>
+    <section class="max-w-5xl mx-auto p-6 my-16 bg-white rounded-2xl shadow-lg mt-10">
+      <div class="text-center mb-6">
+        <h2 class="text-3xl font-bold text-gray-800">Contact Us</h2>
+        <p class="text-gray-600 mt-2">We'd love to hear from you! Send us a message below.</p>
+      </div>
+
+      <form class="space-y-4">
+        <div>
+          <label class="block text-gray-700 font-medium">Name</label>
+          <input type="text" placeholder="Your Name"
+            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-medium">Email</label>
+          <input type="email" placeholder="Your Email"
+            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-medium">Message</label>
+          <textarea rows="4" placeholder="Your Message"
+            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300"></textarea>
+        </div>
+
+        <button type="submit"
+          class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition">
+          Send Message
+        </button>
+      </form>
+    </section>
     <section id="review" class="py-16 bg-gray-50">
       <div class="container mx-auto px-4 max-w-7xl">
         <h2 class="text-3xl font-bold text-center mb-12">
@@ -2493,6 +2548,16 @@
           },
         },
       }).mount(window.splide.Extensions);
+
+      new Splide("#background-slider", {
+        type: 'loop',
+        perPage: 1,
+        autoplay: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        arrows: false,
+        pagination: false,
+      }).mount();
 
       // Optional: Add hover effect for quick view buttons
       document.querySelectorAll(".product-card").forEach((card) => {
