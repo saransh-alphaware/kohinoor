@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./icons/kohinoor-logo.ico">
   <title>Kohinoor - Curtain Accessories & Track Manufacturer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -51,10 +52,30 @@
     .product-card:hover .quick-view {
       opacity: 1;
     }
+
+    /* Hide the up/down arrows in number input fields */
+    .no-arrows::-webkit-outer-spin-button,
+    .no-arrows::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    .no-arrows {
+      -moz-appearance: textfield;
+    }
+
+    .fade-out {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    }
   </style>
 </head>
 
 <body class="bg-white min-h-screen">
+  <div id="preloader" class="fixed inset-0 flex items-center justify-center bg-white z-[999]">
+    <img src="./icons/kohinoor-logo.png" alt="Logo" class="w-40 h-20 animate-pulse">
+  </div>
   <header
     class="fixed w-[98%] justify-between mt-2 left-1/2 -translate-x-1/2 bg-primary backdrop-blur-md shadow-lg z-50 rounded-lg">
     <nav class="w-full flex items-center justify-between px-6 py-4">
@@ -159,7 +180,7 @@
             <div
               class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300">
               <div class="text-center text-white">
-                <h3 class="text-2xl font-bold mb-2">Imp Tracks</h3>
+                <h3 class="text-2xl font-bold mb-2">Imp High Grade Aluminium Tracks</h3>
                 <p class="mb-4">30+ Styles Available</p>
                 <a class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
                   href="Tracks.html">
@@ -187,7 +208,7 @@
             <div
               class="category-overlay absolute inset-0 bg-primary/60 flex items-center justify-center opacity-0 transition-opacity duration-300">
               <div class="text-center text-white">
-                <h3 class="text-2xl font-bold mb-2">Imp Pipes and Rods</h3>
+                <h3 class="text-2xl font-bold mb-2">Imp Steel Pipes and Rods</h3>
                 <p class="mb-4">40+ Styles Available</p>
                 <a class="bg-secondary hover:bg-secondary/90 px-6 py-2 rounded-button whitespace-nowrap"
                   href="Pipes.html">
@@ -247,7 +268,7 @@
     <section id="products" class="py-16">
       <div class="container mx-auto px-4">
         <div class="flex justify-between items-center mb-8">
-          <h2 class="text-3xl font-bold">Imp Tracks</h2>
+          <h2 class="text-3xl font-bold">Imp High Grade Aluminium Tracks</h2>
           <a href="Tracks.html" class="text-secondary hover:text-secondary/80 font-medium flex items-center">
             View All
             <i class="ri-arrow-right-line ml-2"></i>
@@ -856,7 +877,7 @@
     <section class="py-16">
       <div class="container mx-auto px-4">
         <div class="flex justify-between items-center mb-8">
-          <h2 class="text-3xl font-bold">Imp Pipes and Rods</h2>
+          <h2 class="text-3xl font-bold">Imp Steel Pipes and Rods</h2>
           <a href="Pipes.html" class="text-secondary hover:text-secondary/80 font-medium flex items-center">
             View All
             <i class="ri-arrow-right-line ml-2"></i>
@@ -1995,9 +2016,9 @@
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 p-5">
           <div class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden">
             <div class="absolute top-5 left-5 w-3/5">
-              <h2 class="text-xl font-semibold text-gray-800">Imp Tracks</h2>
+              <h2 class="text-xl font-semibold text-gray-800">Imp High Grade Aluminium Tracks</h2>
               <p class="text-gray-700 text-sm">
-                Imp Tracks provide smooth, effortless curtain movement with a sleek,
+                Imp High Grade Aluminium Tracks provide smooth, effortless curtain movement with a sleek,
                 modern design. Made from durable materials, they ensure seamless
                 operation and a neat, polished look.
               </p>
@@ -2022,7 +2043,7 @@
           </div>
           <div class="relative bg-gray-100 p-5 h-72 flex flex-col justify-between overflow-hidden">
             <div class="absolute top-5 left-5 w-3/5">
-              <h2 class="text-xl font-semibold text-gray-800">Imp Pipes and Rods</h2>
+              <h2 class="text-xl font-semibold text-gray-800">Imp Steel Pipes and Rods</h2>
               <p class="text-gray-700 text-sm">
                 Imp Curtain pipes and rods provide sturdy support for hanging
                 curtains, enhancing both functionality and aesthetic appeal in
@@ -2088,8 +2109,8 @@
               <i class="ri-truck-line text-3xl"></i>
             </div>
             <div class="ml-4">
-              <h3 class="font-bold">Free Shipping</h3>
-              <p class="text-sm opacity-80">On orders over $99</p>
+              <h3 class="font-bold">Fast Shipping</h3>
+              <p class="text-sm opacity-80">On any order</p>
             </div>
           </div>
           <div class="flex items-center">
@@ -2169,19 +2190,25 @@
         <div>
           <label class="block text-gray-700 font-medium">Name</label>
           <input type="text" placeholder="Your Name"
-            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300">
+            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-medium">Mobile No.</label>
+          <input type="number" placeholder="Your Mobile No." min="1000000000" max="9999999999"
+            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none no-arrows">
         </div>
 
         <div>
           <label class="block text-gray-700 font-medium">Email</label>
           <input type="email" placeholder="Your Email"
-            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300">
+            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none">
         </div>
 
         <div>
           <label class="block text-gray-700 font-medium">Message</label>
           <textarea rows="4" placeholder="Your Message"
-            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300"></textarea>
+            class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none"></textarea>
         </div>
 
         <button type="submit"
@@ -2314,16 +2341,22 @@
           <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
           <ul class="space-y-4">
             <li>
-              <a href="#" class="text-gray-400 hover:text-white">About Us</a>
+              <a href="#home" class="text-gray-400 hover:text-white">Home</a>
             </li>
             <li>
-              <a href="#" class="text-gray-400 hover:text-white">Contact</a>
+              <a href="about.html" class="text-gray-400 hover:text-white">About Us</a>
             </li>
             <li>
-              <a href="#" class="text-gray-400 hover:text-white">Blog</a>
+              <a href="tel:+919821339373" class="text-gray-400 hover:text-white">Contact</a>
             </li>
             <li>
-              <a href="#" class="text-gray-400 hover:text-white">FAQs</a>
+              <a href="#catalogue" class="text-gray-400 hover:text-white">Catalogue</a>
+            </li>
+            <li>
+              <a href="#services" class="text-gray-400 hover:text-white">Services</a>
+            </li>
+            <li>
+              <a href="#review" class="text-gray-400 hover:text-white">Review</a>
             </li>
           </ul>
         </div>
@@ -2331,7 +2364,7 @@
           <h3 class="text-lg font-semibold mb-6">Products</h3>
           <ul class="space-y-4">
             <li>
-              <a href="Tracks.html" class="text-gray-400 hover:text-white">Imp Tracks</a>
+              <a href="Tracks.html" class="text-gray-400 hover:text-white">Imp High Grade Aluminium Tracks</a>
             </li>
             <li>
               <a href="Finials.html" class="text-gray-400 hover:text-white">Imp Finials</a>
@@ -2340,7 +2373,7 @@
               <a href="Tassels.html" class="text-gray-400 hover:text-white">Imp Tassels</a>
             </li>
             <li>
-              <a href="Pipes.html" class="text-gray-400 hover:text-white">Imp Pipes</a>
+              <a href="Pipes.html" class="text-gray-400 hover:text-white">Imp Steel Pipes and Rods</a>
             </li>
             <li>
               <a href="CurtainAccessory.html" class="text-gray-400 hover:text-white">Imp Curtain Accessory</a>
@@ -2355,7 +2388,7 @@
           <ul class="space-y-4">
             <li class="flex items-center text-gray-400">
               <i class="ri-map-pin-line mr-3"></i>
-              <span>1st Floor Gala No. 108/109/111, Saraf Uday Bhawan, Chincholi
+              <span>1st Floor Gala No. 108/109/110/111, Saraf Uday Bhawan, Chincholi
                 Phatak Gate, Chincholi-Malad (West), Mumbai 400 064,
                 India.</span>
             </li>
@@ -2396,6 +2429,20 @@
     <i class="ri-phone-line"></i>
   </a>
   <script>
+    // Hide loader and show content after a delay
+    window.addEventListener("load", function () {
+      const preloader = document.getElementById("preloader");
+      const mainContent = document.getElementById("main-content");
+
+      setTimeout(() => {
+        preloader.classList.add("fade-out");
+
+        setTimeout(() => {
+          preloader.style.display = "none";
+          mainContent.classList.remove("hidden");
+        }, 500); // Fade-out transition time
+      }, 2000); // Loader visible for 3 seconds
+    });
     document.addEventListener("DOMContentLoaded", function () {
       // Get all links with hash
       const links = document.querySelectorAll('a[href^="#"]');
